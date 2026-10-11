@@ -1,65 +1,87 @@
 # Yoto charging station
 
-An adjustable tabletop concept for a jacketed Yoto Mini, about 20 loose cards,
-and kids' JBL headphones. The jacketed Mini's seated width and depth are now
-measured; other hardware dimensions remain assumptions. This is not a verified
-complete fit or a sliced print profile.
+A compact, 3D-printable tabletop home for a **Yoto Mini in its Adventure Jacket**,
+roughly **20 loose cards**, and **kids' headphones**. Cards sit on the left, the
+player on the right, with a centered headphone stand behind them. Soft, rounded
+surfaces join the holders and stand socket into one sculpted base.
 
-![Current charging station concept](previews/concept-review.png)
+![Charging station and sculpted base](previews/concept-review.png)
 
-The first reported base print fits the cards well, but the player pocket was too
-loose in width and depth. The measured jacketed section is 75.08 × 44.91 mm.
-The user selected **W0.1**: the full base now has a **75.28 × 45.51 mm** Mini
-opening with a **6.3 mm inside corner radius**. Width clearance is 0.1 mm per
-side; depth remains 0.3 mm per side, following the earlier sample's feedback.
-The card cavity, external footprint and aligned organic shoulders are preserved.
-The [width samples](https://github.com/echoz/Yoto/releases/download/w01-candidate/yoto-mini-width-tests.zip) remain available as a
-record of the selection. Full-height removal and connected cables still need
-checking on the finished print.
+The base measures **160 × 121.8 mm**. One shared cable passage routes two USB-C
+leads to charge the player and headphones; each device is plugged in manually.
 
-The side-layout base now has one shared rear-entry underside trough feeding a
-rounded opening right of the mast socket, viewed from the front. Both USB-C plugs
-are right-angle and unmeasured. `shared_cable_test.stl` reproduces the provisional 24 × 18 mm opening,
-12 mm wide trough and bridge so the actual cables can be checked together.
-The card and player shoulders also join with one continuous rounded slope; the
-former narrow groove is filled. The card cavity retains its accepted dimensions.
-The sculpted body continues behind the holders, around the mast socket and out
-to every perimeter edge. The underside remains flat; the charging passage is
-kept clear within the rear curves.
+**Current status: W0.1 print candidate.** The card compartment has accepted
+physical-fit feedback. The revised player pocket uses the selected dimensions,
+but the complete station still needs physical fit and use checks.
 
-The [original fit-test ZIP](https://github.com/echoz/Yoto/releases/download/w01-candidate/yoto-fit-tests.zip) contains the earlier Mini
-pocket trials and the shared cable-passage sample. The
-[complete concept ZIP](https://github.com/echoz/Yoto/releases/download/w01-candidate/yoto-concept-print-parts.zip) contains the selected
-W0.1 cavity. It remains a candidate pending a full print and the remaining cable,
-mast and headphone checks.
+## Download the print files
 
-The current design, parameters, fit coupons, and assembly limitations are described
-in [the CAD guide](cad/README.md). Edit [the OpenSCAD source](cad/compact_dock.scad),
-then regenerate the meshes; the Blender file is a review scene derived from that
-source. The default side layout is the current candidate. The rear layout is a
-comparison.
+**[Download the complete print ZIP](https://github.com/echoz/Yoto/releases/download/w01-candidate/yoto-concept-print-parts.zip)**
 
-## Version control and print downloads
+It contains the three main print parts, fit samples, assembly guide, previews
+and recorded geometry checks. The [candidate release](https://github.com/echoz/Yoto/releases/tag/w01-candidate)
+also provides these smaller packages:
 
-Git tracks the editable CAD, build/review scripts, fit decisions, compact JSON
-evidence records and the documentation figures. STL meshes, print ZIPs, Blender
-scenes and their backups, other renders, logs, slicer jobs and local environments
-are ignored. Existing ignored files remain on disk.
+| Download | Contents |
+| --- | --- |
+| [Mini width samples](https://github.com/echoz/Yoto/releases/download/w01-candidate/yoto-mini-width-tests.zip) | Selected W0.1 pocket and the retained W0.2 alternative |
+| [Original fit samples](https://github.com/echoz/Yoto/releases/download/w01-candidate/yoto-fit-tests.zip) | Earlier Mini pocket trials and the shared two-cable passage test |
 
-The [W0.1 candidate release](https://github.com/echoz/Yoto/releases/tag/w01-candidate)
-preserves the three checked print ZIPs separately from Git history. It is marked
-as a prerelease because the revised full station still needs physical checks.
-Only the base changes from the preceding print candidate; the mast halves are
-unchanged. Do not overwrite a published candidate: attach future print packages
-to a new tag after their source and mesh hashes have been checked.
+If you already printed the preceding candidate's mast halves, keep them:
+**only `base.stl` changed** for the W0.1 fit revision.
 
-JSON manifests and audit reports are retained evidence for their recorded source
-and mesh hashes, including explicitly historical revisions. Rebuilding does not
-recreate independent reviews or establish physical fit. The scripts below export
-meshes and render previews; the original ZIP packaging, width-preview rendering
-and bespoke audit steps are not yet a complete automated release pipeline.
+## Print and assemble
 
-## Rebuild and inspect
+The intended setup is a **Bambu Lab X1C, stock 0.4 mm nozzle, and PLA**. A specific
+plate, filament product and slicer profile have not been established.
+
+1. Extract the complete ZIP and read `READ-BEFORE-PRINTING.md`. Use **100% scale**;
+   resizing changes the selected player fit, card cavity and mast joint together.
+2. Check the small cable, split-joint, socket and saddle samples with the actual
+   cables, fasteners and headphones. The card cavity is unchanged from the
+   accepted print; the Mini width samples are retained for reference or a changed
+   printer/material/profile.
+3. Slice the three main files using the orientations below. Inspect the base's
+   cable bridge and the mast halves' bores, recesses and saddle edges in the slicer.
+   Digital checks do not establish support-free printing.
+4. Join the mast halves with **three M3×20 socket-cap screws** (DIN 912/ISO 4762)
+   and **three M3 full hex nuts** (DIN 934), using a **2.5 mm hex driver**. Prove
+   the joint dry before optionally adding silicone along the exterior seam.
+   Keep the mating faces and socket clear. Install the mast and thread both leads,
+   then check player removal, charging access, headphone retention and stability.
+
+| Main print file | Bed orientation |
+| --- | --- |
+| `base.stl` | Flat underside down |
+| `mast_left.stl` | Supplied flat mating face down |
+| `mast_right.stl` | Supplied flat mating face down |
+
+`mast.stl`, assembled meshes and device references are not print parts for this
+split build. The full [CAD and assembly guide](cad/README.md) covers the mechanical
+connection, fit samples, optional silicone, cable routing and physical checks.
+
+## Fit and compatibility
+
+| Item | Current dimensions or evidence |
+| --- | --- |
+| Jacketed Mini, measured seated section | 75.08 mm wide × 44.91 mm deep |
+| Selected Mini opening | 75.28 × 45.51 mm, with 6.3 mm inside corner radius |
+| Mini clearance | 0.1 mm per side across the width; 0.3 mm per side front-to-back |
+| Card opening | 55.4 × 49.6 mm; accepted card fit preserved |
+| Headphones | JBL Junior 470NC used as the design reference; actual hanging shape and headband fit remain unverified |
+| Charging cables | Two right-angle USB-C plugs; their body dimensions and bends still need checking |
+
+The Mini's width and depth allowances are independent. The original 0.3 mm sample
+received physical-fit feedback, and W0.1 was subsequently selected. That selection
+does not establish full-height removal or charging access in the revised base.
+The Mini's height and exact jacket edge profile also remain unmeasured.
+
+## Edit and rebuild
+
+[`cad/compact_dock.scad`](cad/compact_dock.scad) is the authoritative model, in
+millimetres. [`cad/mini_width_tests.scad`](cad/mini_width_tests.scad) generates the
+separate width samples. Blender scenes are derived review views. The default
+`side` layout is the current design; `rear` is a historical comparison.
 
 These commands use the installed OpenSCAD and Blender applications on this Mac.
 Run from the project root. Application execution may require the host's normal
@@ -88,29 +110,23 @@ Use `mini_width_0_2` for the alternative or `mini_width_tests` for both. Preserv
 support the Manifold backend, Blender supplies its Python modules, and Pillow is
 needed only for the composed overview. Other platforms are not verified.
 
-`exports/concept/manifest.json` records the source and mesh hashes.
-`exports/concept/mesh-checks.json` records raw STL degeneracy, mesh topology,
-dimensions, and simplified collision-probe results. These digital checks do not
-prove physical fit, access during movement, print strength, or loaded stability.
+## Validation and version control
 
-The current fit integration is checked in `selected-mini-fit-checks.json` and
-`independent-mini-fit-review.json`. The earlier full-perimeter sculpt is checked
-in `full-sculpt-checks.json` and independently
-reviewed in `independent-full-sculpt-review.json`. Earlier cable-route and holder-join
-reviews remain in the repository and package as historical evidence, with their revision scope
-identified. `fit-test-sections.json` records the small samples' measured mesh
-dimensions; `holder-join-sections.json` retains the original join profiles.
+Git retains the editable CAD, documentation, scripts, compact evidence JSON and
+selected documentation figures. Generated STL meshes, ZIPs, Blender scenes and
+backups, other renders, logs, slicer jobs and local environments are ignored;
+existing ignored files remain on disk. Checked print ZIPs live in tagged GitHub
+candidate releases rather than Git history.
 
-`exports/concept/fit-clearance-checks.json` records the independent full-pocket
-and full-height keyed-opening intersection checks and their exact source/mesh hashes. These checks use a
-0.01 mm numerical inset; they validate the CAD cavities, not the real devices.
+Current fit evidence is recorded in
+[`selected-mini-fit-checks.json`](exports/concept/selected-mini-fit-checks.json)
+and the [independent review](exports/concept/independent-mini-fit-review.json).
+The [manifest](exports/concept/manifest.json) records source and mesh hashes;
+[mesh checks](exports/concept/mesh-checks.json) cover topology and modeled
+interference. Earlier reports retain their original revision scope.
 
-The station prints as `base.stl`, `mast_left.stl` and `mast_right.stl`. Both mast
-halves are already oriented flat and join with three M3×20 socket-cap screws and
-three M3 full hex nuts. The ZIP includes the small split-joint and full-depth
-socket tests, plus a short saddle pair for checking the rounded retaining lips
-with your real headphones. Print those tests first. Do not print `mast.stl`, the assembled mesh or
-any reference-device/hardware meshes for this split build.
-
-The CAD guide describes the assembly, optional silicone seam treatment and
-remaining physical checks. No slicer profile or verified load rating is supplied.
+These are digital checks, not proof of real-device fit, print strength, cable
+flexibility or loaded stability. Rebuilding does not recreate independent reviews
+or bespoke historical audits. ZIP packaging and width-preview generation are not
+yet a complete automated release pipeline. Preserve published candidate assets;
+use a new tag for a future checked print package.
