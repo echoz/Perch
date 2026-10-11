@@ -16,6 +16,18 @@ scenes must be regenerated after source changes. `README.md` documents the build
   physical validation status must remain explicit. Do not silently replace an
   existing release's artifacts or introduce a license without user direction.
 
+## Public website
+
+- `docs/` owns the standalone website at `https://echoz.github.io/Perch/`.
+  GitHub Pages publishes `main` at `/docs`; retain `.nojekyll` and relative asset
+  links. Only intended website files belong in that directory.
+- Keep the soft cream, sage and coral visual identity, rounded curves and actual
+  CAD renders. Label illustrative device shapes and the print-candidate status.
+- Link to tagged print packages and the matching CAD archive. Preserve published
+  assets and do not assert a license or verified physical fit without evidence.
+- Preview only `docs/`, not the repository root. Check assets, links, responsive
+  layout and keyboard access, then verify the live Pages deployment.
+
 ## Current brief
 
 - Design a 3D-printable, freestanding tabletop charging station for a Yoto Mini

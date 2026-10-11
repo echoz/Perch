@@ -5,7 +5,7 @@ roughly **20 loose cards**, and **kids' headphones**. Cards sit on the left, the
 player on the right, with a centered headphone stand behind them. Soft, rounded
 surfaces join the holders and stand socket into one sculpted base.
 
-**[Visit the Perch website](https://echoz.github.io/side-projects/perch/)** for a
+**[Visit the Perch website](https://echoz.github.io/Perch/)** for a
 closer look at the design, print downloads and editable CAD.
 
 ![Charging station and sculpted base](previews/concept-review.png)
@@ -133,3 +133,16 @@ flexibility or loaded stability. Rebuilding does not recreate independent review
 or bespoke historical audits. ZIP packaging and width-preview generation are not
 yet a complete automated release pipeline. Preserve published candidate assets;
 use a new tag for a future checked print package.
+
+## Project website
+
+The public [Perch website](https://echoz.github.io/Perch/) lives in `docs/`.
+GitHub Pages publishes that directory from `main`; `.nojekyll` keeps it a plain
+static site. The print packages stay in their candidate release and the page
+links to the matching editable CAD snapshot.
+
+To preview it locally, run `python3 -m http.server 8773 --bind 127.0.0.1 --directory docs`
+from this repository, then open `http://127.0.0.1:8773/`. Keep asset links relative
+so they work under the `/Perch/` project path. Check phone and desktop layouts,
+keyboard navigation and download links before publishing changes. Keep physical
+fit status aligned with the CAD guide; renders are not proof of device fit.
