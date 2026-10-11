@@ -16,6 +16,19 @@ scenes must be regenerated after source changes. `README.md` documents the build
   physical validation status must remain explicit. Do not silently replace an
   existing release's artifacts or introduce a license without user direction.
 
+## Licensing
+
+- The user approved CC BY-NC-SA 4.0 for noncommercial sharing and remixes on
+  2026-10-11. `LICENSE.txt` holds the unmodified standard license;
+  `LICENSE-SCOPE.md` owns coverage, exclusions and attribution.
+- Preserve the grant for original CAD design source, meshes, documentation text
+  and renders. Python helpers and HTML/CSS implementation are outside the grant.
+  Do not describe this noncommercial license as an open-source software license
+  or promise control over unprotected functional features or every paid service.
+- Include both license files in future print packages and keep notices beside
+  website downloads. Existing `w01-candidate` ZIPs and their tag remain immutable;
+  accompanying license assets and release notes identify their coverage.
+
 ## Public website
 
 - `docs/` owns the standalone website at `https://echoz.github.io/Perch/`.

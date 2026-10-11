@@ -19,6 +19,10 @@ but the complete station still needs physical fit and use checks.
 
 ## Download the print files
 
+The design is available under **CC BY-NC-SA 4.0** for noncommercial printing and
+remixing. Shared copies need credit; shared adaptations must retain the required
+ShareAlike terms. See the [license and scope](LICENSE-SCOPE.md).
+
 **[Download the complete print ZIP](https://github.com/echoz/Perch/releases/download/w01-candidate/yoto-concept-print-parts.zip)**
 
 It contains the three main print parts, fit samples, assembly guide, previews
@@ -29,6 +33,13 @@ also provides these smaller packages:
 | --- | --- |
 | [Mini width samples](https://github.com/echoz/Perch/releases/download/w01-candidate/yoto-mini-width-tests.zip) | Selected W0.1 pocket and the retained W0.2 alternative |
 | [Original fit samples](https://github.com/echoz/Perch/releases/download/w01-candidate/yoto-fit-tests.zip) | Earlier Mini pocket trials and the shared two-cable passage test |
+
+The original ZIPs are unchanged and predate the license notice. Download the
+accompanying [license](https://github.com/echoz/Perch/releases/download/w01-candidate/LICENSE.txt)
+and [scope notice](https://github.com/echoz/Perch/releases/download/w01-candidate/LICENSE-SCOPE.md)
+with them. Including both when sharing the files is recommended; the license
+allows its text or a link and the required credit and notices in a reasonable
+manner.
 
 If you already printed the preceding candidate's mast halves, keep them:
 **only `base.stl` changed** for the W0.1 fit revision.
@@ -133,6 +144,18 @@ flexibility or loaded stability. Rebuilding does not recreate independent review
 or bespoke historical audits. ZIP packaging and width-preview generation are not
 yet a complete automated release pipeline. Preserve published candidate assets;
 use a new tag for a future checked print package.
+
+## License
+
+Perch's original CAD design, meshes, documentation text and renders are licensed
+under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Noncommercial printing and remixes are welcome with the required attribution and
+ShareAlike terms. Commercial use of protected material requires separate
+permission; the license does not create rights over unprotected functional
+features. Python helpers and HTML/CSS implementation are outside this grant.
+Read [LICENSE-SCOPE.md](LICENSE-SCOPE.md) for exact coverage and suggested credit,
+and [LICENSE.txt](LICENSE.txt) for the full terms. Include both in future print
+packages; preserve the existing release archives and their hashes.
 
 ## Project website
 

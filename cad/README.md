@@ -8,6 +8,13 @@ centered on the base when viewed from the front. The outer pocket shoulders
 align; the selected Mini opening is inset inside its preserved outer shape.
 `layout="rear"` retains the earlier comparison.
 
+The original Perch design source and resulting meshes are licensed under
+**CC BY-NC-SA 4.0** for noncommercial printing and remixing, with attribution and
+the required ShareAlike terms when shared. See the [license scope and attribution
+notice](../LICENSE-SCOPE.md) and [full license](../LICENSE.txt). Include both files
+in future print packages; the existing candidate ZIPs retain their original bytes
+and have accompanying license files in the release.
+
 ## Physical fit feedback — 2026-10-07
 
 The user supplied a photograph of a printed base with cards and a jacketed Mini.
