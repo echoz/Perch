@@ -5,6 +5,9 @@ roughly **20 loose cards**, and **kids' headphones**. Cards sit on the left, the
 player on the right, with a centered headphone stand behind them. Soft, rounded
 surfaces join the holders and stand socket into one sculpted base.
 
+**[Visit the Perch website](https://echoz.github.io/side-projects/perch/)** for a
+closer look at the design, print downloads and editable CAD.
+
 ![Charging station and sculpted base](previews/concept-review.png)
 
 The base measures **160 × 121.8 mm**. One shared cable passage routes two USB-C
