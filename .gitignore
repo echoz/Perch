@@ -1,0 +1,57 @@
+# macOS and local editor files
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Local credentials/configuration; example files may be shared
+.env
+.env.*
+!.env.example
+!.env.template
+
+# CAD source is OpenSCAD. Meshes, Blender scenes and slicer jobs are outputs.
+*.stl
+*.3mf
+*.gcode
+*.blend
+*.blend[0-9]*
+*.csg
+*.log
+*.zip
+
+# Keep compact evidence records; print packages belong in GitHub Releases.
+/exports/*
+!/exports/concept/
+/exports/concept/*
+!/exports/concept/*.json
+!/exports/mini-width-tests/
+/exports/mini-width-tests/*
+!/exports/mini-width-tests/*.json
+!/exports/mini-width-tests/READ-FIRST.txt
+!/exports/rear-comparison/
+/exports/rear-comparison/*
+!/exports/rear-comparison/*.json
+
+# Curated documentation figures only; other renders remain local.
+/previews/*
+!/previews/concept-review.png
+!/previews/base-rear.png
+!/previews/base-cable-route.png
+!/previews/mast-print-layout.png
+!/previews/mast-joint-test.png
+!/previews/mini-width-tests.png
+!/previews/saddle-detail.png
+!/previews/saddle-test.png
+!/previews/mast-flat-split-study.json

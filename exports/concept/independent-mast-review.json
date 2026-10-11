@@ -1,0 +1,335 @@
+{
+  "source_sha256": "cc700eb8321071e0efe058a90c12ef6e9e4a2b034bffa72142a4ff4e5db1138b",
+  "date": "2026-10-07",
+  "status": "Independent read-only CAD review passed; no blocking findings",
+  "scope": "Rounded saddle, modeled upward removal, both full mast halves and both saddle-test halves in both layouts. Source diff reviewed for preservation of existing interfaces.",
+  "preserved_interfaces": [
+    "Base and full device cavities",
+    "Cable routes",
+    "Peg and collar seating",
+    "All three fastener locations and dimensions"
+  ],
+  "saddle": {
+    "clear_channel_depth_mm": 27,
+    "lip_height_mm": 3.5,
+    "seat_center_assembly_z_mm": 196,
+    "lip_peak_assembly_z_mm": 199.5,
+    "cap_width_depth_mm": [
+      52,
+      39
+    ],
+    "assumed_headband_depth_mm": 25
+  },
+  "reviews": [
+    {
+      "source_sha256": "cc700eb8321071e0efe058a90c12ef6e9e4a2b034bffa72142a4ff4e5db1138b",
+      "flat_parts": [
+        {
+          "part": "mast_left",
+          "sha256": "fdbcd491ff8dac883f58242e06cd87a0532d4d99473addd83f2367fcb76d0f30",
+          "components": 1,
+          "bad_edges": 0,
+          "volume_mm3": 36404.44008515615,
+          "bounds": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              190.89999389648438,
+              57.29999923706055,
+              26.0
+            ]
+          ],
+          "bed_contact_mm2": 2406.239125067675,
+          "nonbed_down_faces": 0,
+          "nonbed_down_area_mm2": 0.0
+        },
+        {
+          "part": "mast_right",
+          "sha256": "adb5b5623be949f93c6266361bfc4e6c1ae42f03ea9ef377bc8b3fc7e582cf2d",
+          "components": 1,
+          "bad_edges": 0,
+          "volume_mm3": 36480.710265161775,
+          "bounds": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              190.89999389648438,
+              57.29999923706055,
+              26.0
+            ]
+          ],
+          "bed_contact_mm2": 2406.23927409555,
+          "nonbed_down_faces": 0,
+          "nonbed_down_area_mm2": 0.0
+        },
+        {
+          "part": "saddle_test_left",
+          "sha256": "ae6ab21935ca6089525c496f4ffd3591f1cf3810b71f778b031307fd63b587d3",
+          "components": 1,
+          "bad_edges": 0,
+          "volume_mm3": 18112.838333678286,
+          "bounds": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              50.472198486328125,
+              39.0,
+              26.0
+            ]
+          ],
+          "bed_contact_mm2": 955.2947419421376,
+          "nonbed_down_faces": 0,
+          "nonbed_down_area_mm2": 0.0
+        },
+        {
+          "part": "saddle_test_right",
+          "sha256": "9e75358a835c87ae38b096604621a00f8c9002517765f16e5d71ee66cd5a909f",
+          "components": 1,
+          "bad_edges": 0,
+          "volume_mm3": 18116.14172583653,
+          "bounds": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              50.472198486328125,
+              39.0,
+              26.0
+            ]
+          ],
+          "bed_contact_mm2": 955.2948171197878,
+          "nonbed_down_faces": 0,
+          "nonbed_down_area_mm2": 0.0
+        }
+      ],
+      "continuous_headband_clearance": {
+        "max_surface_above_reference_inner_arc_mm": 6.492862496543239e-06,
+        "at_local_point": [
+          -4.0,
+          18.3,
+          187.13783264160156
+        ],
+        "method": "Clip every mast triangle against headband-depth slab and each linear inner-arc segment; extrema of the affine height difference occur at clipped polygon vertices. If max <= numeric tolerance, pure upward translation cannot collide with the crown."
+      },
+      "center_section_local_z": {
+        "0": [
+          142.77986768996752,
+          187.39999389648438
+        ],
+        "12.5": [
+          171.60689653178164,
+          187.39999389648438
+        ],
+        "13.5": [
+          172.4344834656348,
+          187.39999425425194
+        ],
+        "14": [
+          172.84827693256136,
+          187.6344614265952
+        ],
+        "16.5": [
+          174.91724426719418,
+          190.8999935387401
+        ],
+        "19.499": [
+          177.3800048828125,
+          186.40075512557195
+        ]
+      },
+      "end_sections_local_z": {
+        "25": [
+          173.20000239780973,
+          181.5524444580078
+        ],
+        "25.9": [
+          173.740002986363,
+          180.63789978027341
+        ],
+        "25.999": [
+          173.79940305110387,
+          180.56008169555662
+        ]
+      },
+      "layout": "side"
+    },
+    {
+      "source_sha256": "cc700eb8321071e0efe058a90c12ef6e9e4a2b034bffa72142a4ff4e5db1138b",
+      "flat_parts": [
+        {
+          "part": "mast_left",
+          "sha256": "2b04c00480fa5d1dfc57c1fd8298a555cc047a7b5795499f035634bf3bb28cde",
+          "components": 1,
+          "bad_edges": 0,
+          "volume_mm3": 35715.79941948295,
+          "bounds": [
+            [
+              0.0,
+              -14.550000190734863,
+              0.0
+            ],
+            [
+              190.89999389648438,
+              24.450000762939453,
+              26.0
+            ]
+          ],
+          "bed_contact_mm2": 2348.8523396140554,
+          "nonbed_down_faces": 1,
+          "nonbed_down_area_mm2": 0.00010299385984460961
+        },
+        {
+          "part": "mast_right",
+          "sha256": "47159f143345a60bb1563603c8edca620398257f9e38e969bf95a91d97090a95",
+          "components": 1,
+          "bad_edges": 0,
+          "volume_mm3": 35792.06866154018,
+          "bounds": [
+            [
+              0.0,
+              -14.550000190734863,
+              0.0
+            ],
+            [
+              190.89999389648438,
+              24.450000762939453,
+              26.0
+            ]
+          ],
+          "bed_contact_mm2": 2348.852487387127,
+          "nonbed_down_faces": 0,
+          "nonbed_down_area_mm2": 0.0
+        },
+        {
+          "part": "saddle_test_left",
+          "sha256": "9e148a0cd9a906f82c1057a50ac6fbfb7d2fa6b5ceff743599647fcee63fcfd7",
+          "components": 1,
+          "bad_edges": 0,
+          "volume_mm3": 17982.616383484507,
+          "bounds": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              50.472198486328125,
+              39.0,
+              26.0
+            ]
+          ],
+          "bed_contact_mm2": 944.4428847630729,
+          "nonbed_down_faces": 0,
+          "nonbed_down_area_mm2": 0.0
+        },
+        {
+          "part": "saddle_test_right",
+          "sha256": "692d90c419b37641436832a9a52576ffdc6d053dd12d2aa9634b0dd98c5d4da1",
+          "components": 1,
+          "bad_edges": 0,
+          "volume_mm3": 17985.91945808955,
+          "bounds": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              50.472198486328125,
+              39.0,
+              26.0
+            ]
+          ],
+          "bed_contact_mm2": 944.4429603724458,
+          "nonbed_down_faces": 0,
+          "nonbed_down_area_mm2": 0.0
+        }
+      ],
+      "continuous_headband_clearance": {
+        "max_surface_above_reference_inner_arc_mm": 6.492862496543239e-06,
+        "at_local_point": [
+          -4.0,
+          -14.55,
+          187.13783264160156
+        ],
+        "method": "Clip every mast triangle against headband-depth slab and each linear inner-arc segment; extrema of the affine height difference occur at clipped polygon vertices. If max <= numeric tolerance, pure upward translation cannot collide with the crown."
+      },
+      "center_section_local_z": {
+        "0": [
+          0.0,
+          187.39999389648438
+        ],
+        "12.5": [
+          171.60689637206235,
+          187.39999389648438
+        ],
+        "13.5": [
+          172.43448337406772,
+          187.39999398592627
+        ],
+        "14": [
+          172.8482768750704,
+          187.63446069356868
+        ],
+        "16.5": [
+          174.91724438008387,
+          190.89999398592627
+        ],
+        "19.499": [
+          177.38000488281253,
+          186.40075628800224
+        ]
+      },
+      "end_sections_local_z": {
+        "25": [
+          173.20000239780973,
+          181.5524444580078
+        ],
+        "25.9": [
+          173.740002986363,
+          180.63789978027347
+        ],
+        "25.999": [
+          173.79940305110387,
+          180.56008169555668
+        ]
+      },
+      "layout": "rear"
+    }
+  ],
+  "limits": [
+    "Physical headphone fit, retention, touched surface finish and removal remain untested.",
+    "No slicer toolpaths, printed coupons, strength or tipping test.",
+    "Flat-print checks allow only the existing 0.001 mm2 numerical area; not a slicer support prediction.",
+    "Short saddle coupon does not establish full-station stability or mast strength."
+  ],
+  "reuse_verification": {
+    "current_source_sha256": "3343084490774644959265f8d7ef8680c0d77805312143fff0439c1d635540e3",
+    "date": "2026-10-11",
+    "scope": "Mast and saddle geometry only, verified by exact STL hashes. Historical base/cable statements apply only to the original reviewed revision. The full-perimeter base sculpt is reviewed separately.",
+    "basis": "All four reviewed STL hashes in each layout are identical to the original review. Fresh integrated mesh and six-probe checks are in each layout mesh-checks.json."
+  },
+  "width_trial_source_reuse_verification": {
+    "current_source_sha256": "a45d9c462b4d951877e01c3c067810aa029bcf7fecc1995a15dd1f5e264d7b68",
+    "baseline_source_sha256": "3343084490774644959265f8d7ef8680c0d77805312143fff0439c1d635540e3",
+    "basis": "Only a pure read-only fit-parameter accessor was added to the main source. All21 existing exports in each layout were regenerated and are byte-identical to the previously checked meshes. No station or existing sample geometry changed. New width samples are separately checked in exports/mini-width-tests.",
+    "current_base_sha256": "371623b9d6a4682e5201035a7f6057c2eb81c2a5a3d40f985a80b444fc6db370",
+    "side_exports_unchanged": 21,
+    "rear_exports_unchanged": 21
+  },
+  "selected_fit_reuse": {
+    "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+    "scope": "Mast/saddle parts only; all exact STL hashes unchanged. Historical base statements do not describe the selected Mini opening."
+  }
+}

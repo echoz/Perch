@@ -1,0 +1,930 @@
+{
+  "status": "Independent read-only review complete; no blocking findings",
+  "date": "2026-10-11",
+  "source": "cad/compact_dock.scad",
+  "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+  "baseline_source_sha256": "a45d9c462b4d951877e01c3c067810aa029bcf7fecc1995a15dd1f5e264d7b68",
+  "findings": [],
+  "scope": [
+    "Frozen source diff and derived geometry, side-layout W0.1 integration",
+    "Independent Blender base/coupon section and exterior regression sampling",
+    "Independent final export hashes and six assembly/reference collision outputs",
+    "Review of parent-executed literal full-cavity, key, passage and underside masks"
+  ],
+  "physical_evidence_status": "W0.1 is user-selected, not explicitly reported physically tested; explicit favorable physical feedback applied to the original 0.3 sample. Full-base fit remains unverified.",
+  "nominal_dimensions_mm": {
+    "mini_measured_width_depth": [
+      75.08,
+      44.91
+    ],
+    "mini_selected_inside_width_depth_radius": [
+      75.28,
+      45.51,
+      6.3
+    ],
+    "mini_center": [
+      32.2,
+      30.8
+    ],
+    "mini_cavity_bounds": [
+      [
+        -5.44,
+        8.045
+      ],
+      [
+        69.84,
+        53.555
+      ]
+    ],
+    "floor_z": 8,
+    "card_inside_width_depth_radius": [
+      55.4,
+      49.6,
+      0.8
+    ],
+    "card_center": [
+      -46.3,
+      30.8
+    ],
+    "base_width_depth": [
+      160,
+      121.8
+    ],
+    "mast_translation": [
+      0,
+      71,
+      8.6
+    ],
+    "collar_z": 41.98,
+    "saddle_center": [
+      0,
+      101.8,
+      196
+    ],
+    "shared_hole_center": [
+      39,
+      75
+    ],
+    "placeholder_mini_port": [
+      69.74,
+      39.345,
+      35
+    ],
+    "illustrative_loaded_envelope": [
+      167.74,
+      139.8,
+      206
+    ]
+  },
+  "source_review": {
+    "functional_cut_independent_of_preserved_shaping_envelope": true,
+    "complete_vertical_cut_after_sculpting": true,
+    "card_cut_unchanged": true,
+    "outer_height_field_and_organic_joins_preserved": true,
+    "reference_body_and_right_port_follow_measured_dimensions": true,
+    "legacy_rear_and_coupons_preserved": true
+  },
+  "independent_mesh_review": {
+    "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+    "baseline_source_sha256": "a45d9c462b4d951877e01c3c067810aa029bcf7fecc1995a15dd1f5e264d7b68",
+    "baseline": {
+      "sha256": "371623b9d6a4682e5201035a7f6057c2eb81c2a5a3d40f985a80b444fc6db370",
+      "vertices": 132503,
+      "faces": 265006,
+      "volume_mm3": 286594.93398868,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "degenerate_faces": 0,
+      "min_mm": [
+        -80.0,
+        1.4901218037266517e-09,
+        0.0
+      ],
+      "max_mm": [
+        80.0,
+        121.80000305175781,
+        72.99962615966797
+      ]
+    },
+    "candidate": {
+      "sha256": "c53ef52abc17d5e50a87fe9da964a739e0b70a08e2a4e743f6e101ed1a4e2a56",
+      "vertices": 140313,
+      "faces": 280626,
+      "volume_mm3": 294458.7689345818,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "degenerate_faces": 0,
+      "min_mm": [
+        -80.0,
+        1.4901218037266517e-09,
+        0.0
+      ],
+      "max_mm": [
+        80.0,
+        121.80000305175781,
+        72.99962615966797
+      ]
+    },
+    "selected_W01_coupon": {
+      "sha256": "bf04d6a22bbe6e91a0feba96e69f95cc2fae556bd1f96cc64ff3e540827ae5a5",
+      "vertices": 1588,
+      "faces": 3172,
+      "volume_mm3": 13481.43412926735,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "degenerate_faces": 0,
+      "min_mm": [
+        -40.040000915527344,
+        -38.55500030517578,
+        0.0
+      ],
+      "max_mm": [
+        40.040000915527344,
+        25.155000686645508,
+        10.0
+      ]
+    },
+    "coupon_wall_match": {
+      "ray_count": 5760,
+      "levels_mm": [
+        8.05,
+        9,
+        12,
+        13.5
+      ],
+      "max_xy_error_mm": 1.677165827419015e-05,
+      "missing_rays": [],
+      "axis_hits_at_z9": {
+        "0": [
+          69.83999633789062,
+          30.799999237060547,
+          9.0
+        ],
+        "360": [
+          32.20000076293945,
+          53.55500030517578,
+          9.0
+        ],
+        "720": [
+          -5.439994812011719,
+          30.799999237060547,
+          9.0
+        ],
+        "1080": [
+          32.20000076293945,
+          8.045000076293945,
+          9.0
+        ]
+      }
+    },
+    "full_height_cavity_sampling": {
+      "count": 13396,
+      "upward_hits": [],
+      "upward_hit_count": 0,
+      "max_floor_error_mm": 0.0,
+      "scope": "0.5 mm grid, >0.03 mm inside analytic rounded rectangle; sampled, not exhaustive Boolean proof"
+    },
+    "preserved_exterior_sampling": {
+      "count": 27474,
+      "missing_differences": [],
+      "max_z_error_mm": 4.57763671875e-05,
+      "worst_10": [
+        [
+          4.57763671875e-05,
+          -7.150000000000006,
+          54.1,
+          23.9945068359375,
+          23.994552612304688
+        ],
+        [
+          3.0517578125e-05,
+          72.35,
+          53.35,
+          23.96795654296875,
+          23.967926025390625
+        ],
+        [
+          3.0517578125e-05,
+          71.6,
+          54.1,
+          23.9991455078125,
+          23.999176025390625
+        ],
+        [
+          3.0517578125e-05,
+          -7.900000000000006,
+          53.35,
+          23.986648559570312,
+          23.986679077148438
+        ],
+        [
+          1.52587890625e-05,
+          70.85,
+          6.85,
+          14.05731201171875,
+          14.057296752929688
+        ],
+        [
+          1.52587890625e-05,
+          68.6,
+          55.6,
+          24.039169311523438,
+          24.039154052734375
+        ],
+        [
+          1.52587890625e-05,
+          -4.150000000000006,
+          6.1,
+          14.019561767578125,
+          14.019546508789062
+        ],
+        [
+          0.0,
+          79.85,
+          114.85,
+          2.9334564208984375,
+          2.9334564208984375
+        ],
+        [
+          0.0,
+          79.85,
+          114.1,
+          3.126251220703125,
+          3.126251220703125
+        ],
+        [
+          0.0,
+          79.85,
+          113.35,
+          3.14312744140625,
+          3.14312744140625
+        ]
+      ],
+      "scope": "0.75 mm XY grid excluding old cavity; includes floor inside cards and surface outside their cavity"
+    },
+    "card_preservation": {
+      "rays": 2862,
+      "missing_differences": [],
+      "max_error_mm": 0.0
+    }
+  },
+  "final_export_comparison": {
+    "concept": {
+      "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+      "exports": [
+        {
+          "file": "base.stl",
+          "sha256": "c53ef52abc17d5e50a87fe9da964a739e0b70a08e2a4e743f6e101ed1a4e2a56",
+          "unchanged": false,
+          "matches_manifest": true
+        },
+        {
+          "file": "mast.stl",
+          "sha256": "e1e309e347b930967cfc34c35a132abebe418d8ca9e1a204e1b935bd96287350",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "installed_mast.stl",
+          "sha256": "c8555d7bdbb97f47632e7a3da87d0d704f386f238e3bfb60836ca6895b621a1e",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "assembled.stl",
+          "sha256": "733e91156e245ca11b63a65d40ef281d3f6c265509b3255c711a4a35a2aa6257",
+          "unchanged": false,
+          "matches_manifest": true
+        },
+        {
+          "file": "cradle_test.stl",
+          "sha256": "d555965143fe4ccb89c67f3b1ce11f6880fd4b0179da96d796a63afb5ba74b56",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "joint_test.stl",
+          "sha256": "ec0444d90679df47dc1a76397d87b541866edb0fdec70e4ea0c5dead15d4eb19",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "card_test.stl",
+          "sha256": "7e181c94afb3c6bc22dd19b6a11bc4a0c46c35f9cdb26cb60684e04e06c5ceb7",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "mast_left.stl",
+          "sha256": "fdbcd491ff8dac883f58242e06cd87a0532d4d99473addd83f2367fcb76d0f30",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "mast_right.stl",
+          "sha256": "adb5b5623be949f93c6266361bfc4e6c1ae42f03ea9ef377bc8b3fc7e582cf2d",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "mast_joint_test_left.stl",
+          "sha256": "38cb992b545fed07fb43a6d1e91eec008f9e6c1729ce3b687b19038f61ff92ad",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "mast_joint_test_right.stl",
+          "sha256": "92a86130c0a9a91c13d8ec91a139930bc09b35b728d566af556ca882506e0bda",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "full_socket_test.stl",
+          "sha256": "3951b923d4612670c1c731d5578efe52ee06581e9c1a38c3f097660b66a13e6e",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "saddle_test_left.stl",
+          "sha256": "ae6ab21935ca6089525c496f4ffd3591f1cf3810b71f778b031307fd63b587d3",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "saddle_test_right.stl",
+          "sha256": "9e75358a835c87ae38b096604621a00f8c9002517765f16e5d71ee66cd5a909f",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "mini_pocket_tests.stl",
+          "sha256": "9eee33be1f125ff0d728531679dbc49409833d85617de778f2b3d357d63ddac4",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "shared_cable_test.stl",
+          "sha256": "0d2282d3c1f16aad17b1389a293d07eb40f601fd2c0a1b0c8f2d51b65c7ac1da",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "reference_mini.stl",
+          "sha256": "7bfb95cdf1eced736a16bfb3de663d562f059619a37e15bec2650c6c5eb95b76",
+          "unchanged": false,
+          "matches_manifest": true
+        },
+        {
+          "file": "reference_cards.stl",
+          "sha256": "01066905ca665c993386a653852ff9531d29de5df65ec792ef51715498634fed",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "reference_headphones.stl",
+          "sha256": "850d73cf00f9512db22ad97fd3abc2aea739a0c41df3980dfefcab97890ac237",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "reference_cables.stl",
+          "sha256": "150a92e28a24ace684027e27e4b0e5a316cad4d299ef0103ae81848c9be777c0",
+          "unchanged": false,
+          "matches_manifest": true
+        },
+        {
+          "file": "reference_fasteners.stl",
+          "sha256": "ed5e712c0df8988fa9d172a9868b5cef601c86fa63d7e07f5b98a8ca406d6cbd",
+          "unchanged": true,
+          "matches_manifest": true
+        }
+      ],
+      "unchanged_count": 17
+    },
+    "rear-comparison": {
+      "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+      "exports": [
+        {
+          "file": "base.stl",
+          "sha256": "87267789c460541d7342eb4300c7c821c0b444409142b403197aacd589575b7c",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "mast.stl",
+          "sha256": "5051ae0e864436713f71f665da22067ce0d0b76ed21a45f5c07799419c7e9bce",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "installed_mast.stl",
+          "sha256": "3e5a9f8dfafda258012209395a786564d594a8d70a77f1c6cfd71df32c06a455",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "assembled.stl",
+          "sha256": "e3844dd2a6ad20e87e86eb0353985a97cd0f295ee4cf7352d04f8c8e5264d425",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "cradle_test.stl",
+          "sha256": "d555965143fe4ccb89c67f3b1ce11f6880fd4b0179da96d796a63afb5ba74b56",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "joint_test.stl",
+          "sha256": "ec0444d90679df47dc1a76397d87b541866edb0fdec70e4ea0c5dead15d4eb19",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "card_test.stl",
+          "sha256": "d8c7457d31a332a445120d554651c7632bb1e20447f29e058811bcf50605fd88",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "mast_left.stl",
+          "sha256": "2b04c00480fa5d1dfc57c1fd8298a555cc047a7b5795499f035634bf3bb28cde",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "mast_right.stl",
+          "sha256": "47159f143345a60bb1563603c8edca620398257f9e38e969bf95a91d97090a95",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "mast_joint_test_left.stl",
+          "sha256": "82d455cbe3b7d127c1d5edb2d60a77e57e3f93347d468b2fa527d0748cda8c4e",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "mast_joint_test_right.stl",
+          "sha256": "63e93cc90a6129b459a69020f5053cdfebea127d88ccac3ca020009b0f98b8f6",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "full_socket_test.stl",
+          "sha256": "3951b923d4612670c1c731d5578efe52ee06581e9c1a38c3f097660b66a13e6e",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "saddle_test_left.stl",
+          "sha256": "9e148a0cd9a906f82c1057a50ac6fbfb7d2fa6b5ceff743599647fcee63fcfd7",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "saddle_test_right.stl",
+          "sha256": "692d90c419b37641436832a9a52576ffdc6d053dd12d2aa9634b0dd98c5d4da1",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "mini_pocket_tests.stl",
+          "sha256": "9eee33be1f125ff0d728531679dbc49409833d85617de778f2b3d357d63ddac4",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "shared_cable_test.stl",
+          "sha256": "0d2282d3c1f16aad17b1389a293d07eb40f601fd2c0a1b0c8f2d51b65c7ac1da",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "reference_mini.stl",
+          "sha256": "42a1f58784ea1ac8273760ef3eca7655bd8b75c5c4f5d2f1aa10dcc0efe96d7f",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "reference_cards.stl",
+          "sha256": "7052f5f22bcb32cdb743c33dcaf70ea9506d936390a37d778c32fb26aaed4cb3",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "reference_headphones.stl",
+          "sha256": "da29a7dfe814019d3effee7b5671cf31f249e9cc7329a8825d7ddb5c2a367067",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "reference_cables.stl",
+          "sha256": "9d2444a75ac1316b34eef081697771e215ac3fab28259b722a5f15dc55ad4059",
+          "unchanged": true,
+          "matches_manifest": true
+        },
+        {
+          "file": "reference_fasteners.stl",
+          "sha256": "5665b74d6a3f3ae2db289450fe66752850d5593b2fd270501d8a822f0363b38d",
+          "unchanged": true,
+          "matches_manifest": true
+        }
+      ],
+      "unchanged_count": 21
+    }
+  },
+  "independent_collision_review": {
+    "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+    "results": {
+      "interference": {
+        "builder_outcome": {
+          "empty": false,
+          "exit_code": 0
+        },
+        "sha256": "0d3c0cf5b92a3649cac4b2f7c6a2dc3bf55275521a3f84eee8276870987e0773",
+        "volume_mm3": -4.263256414560601e-14,
+        "component_dimensions_mm": [
+          [
+            34.0,
+            14.0,
+            0.0
+          ]
+        ],
+        "zero_volume_planar_contact": true
+      },
+      "device_interference": {
+        "builder_outcome": {
+          "empty": false,
+          "exit_code": 0
+        },
+        "sha256": "d377bdebe516cece21e528e68de82bfbcb9aa7307ac5309813aed3c9f1f24adc",
+        "volume_mm3": -7.993605777301127e-15,
+        "component_dimensions_mm": [
+          [
+            18.116886138916016,
+            15.615847110748291,
+            0.0
+          ],
+          [
+            52.98166000843048,
+            0.56903076171875,
+            0.0
+          ],
+          [
+            74.58048057556152,
+            34.28926086425781,
+            0.0
+          ],
+          [
+            26.995121002197266,
+            0.1743316650390625,
+            0.0
+          ],
+          [
+            46.596497535705566,
+            0.3561363220214844,
+            0.0
+          ]
+        ],
+        "zero_volume_planar_contact": true
+      },
+      "reference_interference": {
+        "builder_outcome": {
+          "empty": true,
+          "exit_code": 1
+        }
+      },
+      "mast_hardware_interference": {
+        "builder_outcome": {
+          "empty": false,
+          "exit_code": 0
+        },
+        "sha256": "bf4693416e51416e69237f1c9b358b5c2f2a1216e5f30d2f64bc7553203868cc",
+        "volume_mm3": -1.441000097024414e-13,
+        "component_dimensions_mm": [
+          [
+            0.0,
+            1.9068641662597656,
+            0.7377166748046875
+          ],
+          [
+            0.0,
+            1.9068641662597656,
+            0.59405517578125
+          ],
+          [
+            0.0,
+            0.08127337694168091,
+            2.4343719482421875
+          ],
+          [
+            0.0,
+            0.47230052947998047,
+            4.262248992919922
+          ],
+          [
+            0.0,
+            0.3851439952850342,
+            1.5057754516601562
+          ],
+          [
+            0.0,
+            0.8251621723175049,
+            1.3760223388671875
+          ],
+          [
+            0.0,
+            0.21373677253723145,
+            1.0609092712402344
+          ],
+          [
+            0.0,
+            0.3401055335998535,
+            1.1012954711914062
+          ],
+          [
+            0.0,
+            0.3444371223449707,
+            1.531158447265625
+          ],
+          [
+            0.0,
+            0.21306657791137695,
+            4.176586151123047
+          ],
+          [
+            0.0,
+            0.3055839538574219,
+            1.3703193664550781
+          ],
+          [
+            0.0,
+            0.25246524810791016,
+            2.6707839965820312
+          ],
+          [
+            0.0,
+            0.02838277816772461,
+            1.4235038757324219
+          ],
+          [
+            0.0,
+            1.140588641166687,
+            3.0859336853027344
+          ],
+          [
+            0.0,
+            1.8200774192810059,
+            0.5940475463867188
+          ],
+          [
+            0.0,
+            1.3087289333343506,
+            0.2297821044921875
+          ],
+          [
+            0.0,
+            1.9099345207214355,
+            0.10947036743164062
+          ],
+          [
+            0.0,
+            0.8027782440185547,
+            4.284950256347656
+          ],
+          [
+            0.0,
+            0.8705511093139648,
+            1.4542160034179688
+          ],
+          [
+            0.0,
+            0.3172416687011719,
+            1.42620849609375
+          ],
+          [
+            0.0,
+            0.5250005722045898,
+            1.1919708251953125
+          ],
+          [
+            0.0,
+            0.26207733154296875,
+            1.1794891357421875
+          ],
+          [
+            0.0,
+            0.3861255645751953,
+            2.1817245483398438
+          ],
+          [
+            0.0,
+            0.5148525238037109,
+            3.6186370849609375
+          ],
+          [
+            0.0,
+            0.10666465759277344,
+            2.0235061645507812
+          ],
+          [
+            0.0,
+            1.820077896118164,
+            0.9371566772460938
+          ],
+          [
+            0.0,
+            1.8404111862182617,
+            0.10947418212890625
+          ],
+          [
+            0.0,
+            1.820077896118164,
+            0.45497894287109375
+          ],
+          [
+            0.0,
+            1.8404111862182617,
+            0.109466552734375
+          ],
+          [
+            0.0,
+            0.239959716796875,
+            1.891815185546875
+          ],
+          [
+            0.0,
+            0.5609874725341797,
+            1.4195098876953125
+          ],
+          [
+            0.0,
+            0.47229957580566406,
+            1.72265625
+          ],
+          [
+            0.0,
+            0.48525238037109375,
+            1.24169921875
+          ],
+          [
+            0.0,
+            0.4334087371826172,
+            1.01422119140625
+          ],
+          [
+            0.0,
+            0.40181922912597656,
+            1.04296875
+          ],
+          [
+            0.0,
+            0.4358081817626953,
+            1.184051513671875
+          ],
+          [
+            0.0,
+            0.2704505920410156,
+            4.20184326171875
+          ],
+          [
+            0.0,
+            0.06532096862792969,
+            0.928009033203125
+          ]
+        ],
+        "zero_volume_planar_contact": true
+      },
+      "mast_halves_interference": {
+        "builder_outcome": {
+          "empty": false,
+          "exit_code": 0
+        },
+        "sha256": "16cae2182de615ad6cae3af67d28a253ce02cbdbc6a3d2e95de51c79bab5be7a",
+        "volume_mm3": 0.0,
+        "component_dimensions_mm": [
+          [
+            0.0,
+            57.27583312988281,
+            187.39999389648438
+          ],
+          [
+            0.0,
+            0.6052970886230469,
+            2.4105987548828125
+          ],
+          [
+            0.0,
+            1.7256526947021484,
+            3.2441940307617188
+          ],
+          [
+            0.0,
+            0.5992107391357422,
+            1.1497039794921875
+          ],
+          [
+            0.0,
+            1.1591777801513672,
+            1.549530029296875
+          ],
+          [
+            0.0,
+            3.9999990463256836,
+            1.375
+          ],
+          [
+            0.0,
+            2.811511993408203,
+            13.589500427246094
+          ],
+          [
+            0.0,
+            4.66038703918457,
+            22.912109375
+          ]
+        ],
+        "zero_volume_planar_contact": true
+      },
+      "saddle_removal_interference": {
+        "builder_outcome": {
+          "empty": true,
+          "exit_code": 1
+        }
+      }
+    },
+    "limits": "Evaluated modeled reference envelopes only; physical fit, ports, cable bends, strength and printability are unverified."
+  },
+  "parent_literal_masks_reviewed": {
+    "mini": {
+      "outcome": "empty",
+      "source_sha256": "09c84d552b10f507242c70250f7920511dad5b2b9bd82c54d9c9b3fa45175ea6",
+      "log_sha256": "af43e3c6c1d7b2206057815e662e536a3a0498eb0c6b715fdc2689ab69c8437b",
+      "executor": "parent",
+      "independent_review": "literal intended mask dimensions and final empty log reviewed; 0.01 mm numerical inset retained"
+    },
+    "cards": {
+      "outcome": "empty",
+      "source_sha256": "960d6a31552159041175d407b5c45c8caa20a5b4b510b1c6b463db7468064fa1",
+      "log_sha256": "af43e3c6c1d7b2206057815e662e536a3a0498eb0c6b715fdc2689ab69c8437b",
+      "executor": "parent",
+      "independent_review": "literal intended mask dimensions and final empty log reviewed; 0.01 mm numerical inset retained"
+    },
+    "mast_opening": {
+      "outcome": "empty",
+      "source_sha256": "96c33d673c0b3b5959e20a61c9badec857a0ad65db94296bcb34b5d83e3f22f5",
+      "log_sha256": "af43e3c6c1d7b2206057815e662e536a3a0498eb0c6b715fdc2689ab69c8437b",
+      "executor": "parent",
+      "independent_review": "literal intended mask dimensions and final empty log reviewed; 0.01 mm numerical inset retained"
+    },
+    "cable_opening": {
+      "outcome": "empty",
+      "source_sha256": "987e1bcb2abf1d884c0794b6ea9d8e3d199275cafb2fbbe10d15f5c55602979e",
+      "log_sha256": "af43e3c6c1d7b2206057815e662e536a3a0498eb0c6b715fdc2689ab69c8437b",
+      "executor": "parent",
+      "independent_review": "literal intended mask dimensions and final empty log reviewed; 0.01 mm numerical inset retained"
+    },
+    "cable_trough": {
+      "outcome": "empty",
+      "source_sha256": "a35e51157350d722ee7abd115d90c108b1585b87ec5b964cc557d8b18790109b",
+      "log_sha256": "af43e3c6c1d7b2206057815e662e536a3a0498eb0c6b715fdc2689ab69c8437b",
+      "executor": "parent",
+      "independent_review": "literal intended mask dimensions and final empty log reviewed; 0.01 mm numerical inset retained"
+    }
+  },
+  "width_trial_regeneration": {
+    "mini_width_0_1": {
+      "sha256": "bf04d6a22bbe6e91a0feba96e69f95cc2fae556bd1f96cc64ff3e540827ae5a5",
+      "matches_baseline": true
+    },
+    "mini_width_0_2": {
+      "sha256": "d40fa780401418b0be46356664bf8c3b71c248fa93ae2aa4e5d06769b38afe21",
+      "matches_baseline": true
+    },
+    "mini_width_tests": {
+      "sha256": "1bb118de43656653d7c656e65620fb138a59aebe9c3a97f91abb11917b7d98f3",
+      "matches_baseline": true
+    }
+  },
+  "project_mesh_inspection_reviewed": {
+    "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+    "all21_regular_meshes_closed": true,
+    "all4_nonempty_probes_planar_contact": true,
+    "remaining2_probes_empty": true
+  },
+  "solid_CAD_volume": {
+    "baseline_cm3": 286.59493398868,
+    "candidate_cm3": 294.45876893458177,
+    "increase_cm3": 7.863834945901763,
+    "increase_percent": 2.743884839992461
+  },
+  "limits": [
+    "Mesh rays are finite samples; independently specified full-height masks provide complementary Boolean evidence with 0.01 mm numerical inset.",
+    "The selected opening matches W0.1 geometry; this does not prove physical jacket fit, printer dimensional accuracy, full-height removal or touched-edge feel.",
+    "Measured width/depth do not establish the body corner radius, height, exact port coordinates, cable body size, bend stiffness or slack.",
+    "Illustrative device/cable collisions pass; actual fit, slicer behavior, structural strength, aging, load and stability remain unverified.",
+    "No live Blender, project files or user artifacts were modified by this reviewer."
+  ],
+  "final_source_recheck": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd"
+}

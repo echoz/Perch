@@ -1,0 +1,136 @@
+{
+  "status": "Proposed print orientation only; joining method undecided; not included in print-parts ZIP",
+  "source_sha256": "31e20730c96393e280170c304cd52623929afa9334433a5dcda79639447983f2",
+  "mast_sha256": "9891d3c904518bf13553904c0c7c456931e2202f5e6171d8c8216f9e8d942643",
+  "cut_plane": "mast-local X=0; both mating faces placed on Z=0",
+  "geometry_checks": {
+    "left": {
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          188.0,
+          51.80000000000001,
+          28.78559749926496
+        ]
+      ],
+      "triangles": 592,
+      "nonmanifold_edges": 0,
+      "bed_contact_mm2": 2207.803741077564,
+      "downward_nonbed_triangles": 0,
+      "volume_mm3": 31638.812939721203
+    },
+    "right": {
+      "bounds": [
+        [
+          0.0,
+          -1.4210854715202004e-14,
+          0.0
+        ],
+        [
+          188.0,
+          51.8,
+          28.78559749926496
+        ]
+      ],
+      "triangles": 588,
+      "nonmanifold_edges": 0,
+      "bed_contact_mm2": 2207.8037410775637,
+      "downward_nonbed_triangles": 0,
+      "volume_mm3": 31706.812939721203
+    }
+  },
+  "topology_checks": [
+    {
+      "file": "mast-left-binary.stl",
+      "sha256": "959ed65f1d8006c12a298e93465b0aba4deae808aae0a23adaac6f3a3927a32d",
+      "raw_stl_triangles": 592,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 298,
+          "faces": 592,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              188.0,
+              51.8,
+              28.7856
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "signed_volume_mm3": 31638.811,
+          "min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_mm": [
+            188.0,
+            51.8,
+            28.7856
+          ],
+          "dimensions_mm": [
+            188.0,
+            51.8,
+            28.7856
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "mast-right-binary.stl",
+      "sha256": "32d79a0bb7a797b18ba2c4346bf26546790ae79b992498e9f41bcb0135f95e44",
+      "raw_stl_triangles": 588,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 296,
+          "faces": 588,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              188.0,
+              51.8,
+              28.7856
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "signed_volume_mm3": 31706.813,
+          "min_mm": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "max_mm": [
+            188.0,
+            51.8,
+            28.7856
+          ],
+          "dimensions_mm": [
+            188.0,
+            51.8,
+            28.7856
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Plain halves have no joining features.",
+    "Existing feathered saddle tips remain.",
+    "No slicer, print, joint strength or fit test.",
+    "Seam gap and first-layer expansion can alter the assembled peg fit."
+  ]
+}

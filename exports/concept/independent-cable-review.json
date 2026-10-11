@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-11",
+  "source_sha256": "1a470a2fcb553b358990ea9da16c3e79aa0175a78e3fc02b23a780248d25e0c3",
+  "status": "Independent read-only review completed; no blocking findings",
+  "reviewer": "shared_cable_route; GPT-6-Astra high",
+  "scope": "Relocation of shared opening and trough to right of mast, related cable paths and margins; preservation of cavities, seamless join and hardware",
+  "findings": [],
+  "verified": {
+    "opening_center_mm": [
+      39,
+      75
+    ],
+    "mouth_bounds_mm": [
+      [
+        26,
+        65
+      ],
+      [
+        52,
+        85
+      ]
+    ],
+    "pocket_shoulder_clearance_mm": 3.4,
+    "socket_blend_clearance_mm": 3.0,
+    "headphone_crossing_y_mm": 90,
+    "mini_route_departs_directly_right": true,
+    "illustrative_leads_separate": true,
+    "unchanged_interfaces": [
+      "Card/Mini cavities",
+      "Seamless holder join",
+      "Mast/socket",
+      "Fit coupons",
+      "Rear comparison"
+    ],
+    "throat_width_depth_radius_mm": [
+      24,
+      18,
+      4
+    ],
+    "trough_width_depth_mm": [
+      12,
+      4.6
+    ]
+  },
+  "limits": [
+    "Digital review only; actual right-angle plug passage, cable bends and printed bridge need physical fit testing.",
+    "Fresh integrated meshes, six interference probes and full-cavity clearance checks are recorded separately."
+  ],
+  "current_revision_scope": {
+    "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+    "status": "Historical revision evidence",
+    "note": "Original hashes and reuse records remain historical. Current W0.1 cavity and references are covered by selected-mini-fit-checks.json and independent-mini-fit-review.json. Exterior and card geometry were independently compared against the preceding base."
+  },
+  "width_trial_source_reuse_verification": {
+    "current_source_sha256": "a45d9c462b4d951877e01c3c067810aa029bcf7fecc1995a15dd1f5e264d7b68",
+    "baseline_source_sha256": "3343084490774644959265f8d7ef8680c0d77805312143fff0439c1d635540e3",
+    "basis": "Only a pure read-only fit-parameter accessor was added to the main source. All21 existing exports in each layout were regenerated and are byte-identical to the previously checked meshes. No station or existing sample geometry changed. New width samples are separately checked in exports/mini-width-tests.",
+    "current_base_sha256": "371623b9d6a4682e5201035a7f6057c2eb81c2a5a3d40f985a80b444fc6db370",
+    "side_exports_unchanged": 21,
+    "rear_exports_unchanged": 21
+  }
+}

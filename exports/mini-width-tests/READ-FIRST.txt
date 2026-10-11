@@ -1,0 +1,38 @@
+YOTO MINI: WIDTH REFINEMENT
+
+The previous 0.3 sample used 0.3 mm clearance on EACH SIDE in both directions:
+75.68 mm inside width x 45.51 mm inside depth.
+
+These new samples keep that same depth and rounded corner radius. Only the
+width changes. The estimated 0.5 mm of sideways play is not treated as a precise
+measurement or an amount to subtract.
+
+ALTERNATIVE SAMPLE (RETAINED FOR REFERENCE)
+mini_width_0_2.stl — label W0.2
+Inside: 75.48 mm wide x 45.51 mm deep.
+Width allowance: 0.2 mm per side (0.4 mm total).
+This is 0.2 mm narrower overall than the previous 0.3 sample.
+
+SELECTED: W0.1
+mini_width_0_1.stl — label W0.1
+Inside: 75.28 mm wide x 45.51 mm deep.
+Width allowance: 0.1 mm per side (0.2 mm total).
+This is 0.4 mm narrower overall than the previous 0.3 sample.
+
+mini_width_tests.stl contains BOTH samples. Use it only if you want to print
+both together; do not also print duplicate copies from the individual files.
+
+Use the same X1C, PLA, profile and orientation as the successful 0.3 sample.
+Print at 100% scale, with the supplied flat bottom on the plate. Do not resize
+in the slicer: that would also alter the depth, corners and wall thickness.
+
+Both samples have a 2 mm floor, 8 mm walls above it, 2.4 mm wall thickness and
+6.3 mm inside corner radius. The corner radius remains an assumption; preserving
+it here isolates the width change. These are millimetre STL files.
+
+The user selected W0.1 on 2026-10-11. The full-base cavity now matches its
+75.28 x 45.51 mm R6.3 opening. The earlier 0.3 sample has explicit printed-fit
+feedback; selection is not a new claim of full-station physical verification.
+Keep these unchanged samples for reference or changes in printer/material/profile.
+A shallow sample does not prove full-height removal or charging access. Digital
+checks do not prove physical fit or printer accuracy.

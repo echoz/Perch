@@ -1,0 +1,1565 @@
+{
+  "status": "concept; physical fit unverified",
+  "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+  "layout": "rear",
+  "units": "mm (STL has no intrinsic unit metadata)",
+  "flat_print_check": {
+    "normal_z_threshold": -0.0001,
+    "bed_plane_tolerance_mm": 0.0001,
+    "total_downward_area_tolerance_mm2": 0.001,
+    "note": "Allow sub-resolution STL numerical slivers; retain their counts and areas in the report. Not a slicer support prediction."
+  },
+  "checks": [
+    {
+      "file": "assembled.stl",
+      "sha256": "e3844dd2a6ad20e87e86eb0353985a97cd0f295ee4cf7352d04f8c8e5264d425",
+      "raw_stl_triangles": 22440,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 11218,
+          "faces": 22440,
+          "components": 2,
+          "component_dimensions_mm": [
+            [
+              93.0,
+              99.5,
+              199.5
+            ],
+            [
+              30.7,
+              10.7,
+              33.98
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 671,
+          "above_bed_downward_area_mm2": 7505.2627,
+          "bed_contact_area_mm2": 7557.594,
+          "signed_volume_mm3": 162865.096,
+          "min_mm": [
+            -46.5,
+            -0.0,
+            0.0
+          ],
+          "max_mm": [
+            46.5,
+            99.5,
+            199.5
+          ],
+          "dimensions_mm": [
+            93.0,
+            99.5,
+            199.5
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "base.stl",
+      "sha256": "87267789c460541d7342eb4300c7c821c0b444409142b403197aacd589575b7c",
+      "raw_stl_triangles": 3444,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 1724,
+          "faces": 3444,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              93.0,
+              93.4,
+              41.98
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 69,
+          "above_bed_downward_area_mm2": 1157.0228,
+          "bed_contact_area_mm2": 7557.5939,
+          "signed_volume_mm3": 91357.222,
+          "min_mm": [
+            -46.5,
+            -0.0,
+            0.0
+          ],
+          "max_mm": [
+            46.5,
+            93.4,
+            41.98
+          ],
+          "dimensions_mm": [
+            93.0,
+            93.4,
+            41.98
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "card_test.stl",
+      "sha256": "d8c7457d31a332a445120d554651c7632bb1e20447f29e058811bcf50605fd88",
+      "raw_stl_triangles": 4132,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 2072,
+          "faces": 4132,
+          "components": 3,
+          "component_dimensions_mm": [
+            [
+              93.0,
+              22.4,
+              14.98
+            ],
+            [
+              93.0,
+              22.7,
+              14.98
+            ],
+            [
+              93.0,
+              23.0,
+              14.98
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 463,
+          "above_bed_downward_area_mm2": 364.3786,
+          "bed_contact_area_mm2": 6322.8898,
+          "signed_volume_mm3": 40478.17,
+          "min_mm": [
+            -46.5,
+            -11.2,
+            0.0
+          ],
+          "max_mm": [
+            46.5,
+            73.5,
+            14.98
+          ],
+          "dimensions_mm": [
+            93.0,
+            84.7,
+            14.98
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "cradle_test.stl",
+      "sha256": "d555965143fe4ccb89c67f3b1ce11f6880fd4b0179da96d796a63afb5ba74b56",
+      "raw_stl_triangles": 5412,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 2712,
+          "faces": 5412,
+          "components": 3,
+          "component_dimensions_mm": [
+            [
+              89.4,
+              19.0,
+              12.98
+            ],
+            [
+              88.8,
+              19.0,
+              12.98
+            ],
+            [
+              90.0,
+              19.0,
+              12.98
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 572,
+          "above_bed_downward_area_mm2": 83.1735,
+          "bed_contact_area_mm2": 5085.39,
+          "signed_volume_mm3": 18467.728,
+          "min_mm": [
+            -45.0,
+            -9.5,
+            0.0
+          ],
+          "max_mm": [
+            45.0,
+            57.5,
+            12.98
+          ],
+          "dimensions_mm": [
+            90.0,
+            67.0,
+            12.98
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "full_socket_test.stl",
+      "sha256": "3951b923d4612670c1c731d5578efe52ee06581e9c1a38c3f097660b66a13e6e",
+      "raw_stl_triangles": 6010,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 3011,
+          "faces": 6010,
+          "components": 3,
+          "component_dimensions_mm": [
+            [
+              40.0,
+              29.0,
+              36.98
+            ],
+            [
+              40.0,
+              29.0,
+              36.98
+            ],
+            [
+              40.0,
+              29.0,
+              36.98
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 0,
+          "above_bed_downward_area_mm2": 0,
+          "bed_contact_area_mm2": 3469.5918,
+          "signed_volume_mm3": 39174.532,
+          "min_mm": [
+            -20.0,
+            -14.5,
+            0.0
+          ],
+          "max_mm": [
+            108.0,
+            14.5,
+            36.98
+          ],
+          "dimensions_mm": [
+            128.0,
+            29.0,
+            36.98
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "installed_mast.stl",
+      "sha256": "3e5a9f8dfafda258012209395a786564d594a8d70a77f1c6cfd71df32c06a455",
+      "raw_stl_triangles": 18996,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 9494,
+          "faces": 18996,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              52.0,
+              39.0,
+              190.9
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 649,
+          "above_bed_downward_area_mm2": 6496.4816,
+          "bed_contact_area_mm2": 0,
+          "signed_volume_mm3": 71507.874,
+          "min_mm": [
+            -26.0,
+            60.5,
+            8.6
+          ],
+          "max_mm": [
+            26.0,
+            99.5,
+            199.5
+          ],
+          "dimensions_mm": [
+            52.0,
+            39.0,
+            190.9
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "joint_test.stl",
+      "sha256": "ec0444d90679df47dc1a76397d87b541866edb0fdec70e4ea0c5dead15d4eb19",
+      "raw_stl_triangles": 6428,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 3222,
+          "faces": 6428,
+          "components": 4,
+          "component_dimensions_mm": [
+            [
+              40.0,
+              29.0,
+              14.98
+            ],
+            [
+              40.0,
+              29.0,
+              14.98
+            ],
+            [
+              40.0,
+              29.0,
+              14.98
+            ],
+            [
+              34.0,
+              14.0,
+              15.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 57,
+          "above_bed_downward_area_mm2": 177.1328,
+          "bed_contact_area_mm2": 3767.5918,
+          "signed_volume_mm3": 25457.153,
+          "min_mm": [
+            -20.0,
+            -14.5,
+            0.0
+          ],
+          "max_mm": [
+            108.0,
+            41.0,
+            15.0
+          ],
+          "dimensions_mm": [
+            128.0,
+            55.5,
+            15.0
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "mast.stl",
+      "sha256": "5051ae0e864436713f71f665da22067ce0d0b76ed21a45f5c07799419c7e9bce",
+      "raw_stl_triangles": 18996,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 9494,
+          "faces": 18996,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              52.0,
+              39.0,
+              190.89999
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 646,
+          "above_bed_downward_area_mm2": 6244.4016,
+          "bed_contact_area_mm2": 252.0812,
+          "signed_volume_mm3": 71507.87,
+          "min_mm": [
+            -26.0,
+            -21.55,
+            0.0
+          ],
+          "max_mm": [
+            26.0,
+            17.45,
+            190.9
+          ],
+          "dimensions_mm": [
+            52.0,
+            39.0,
+            190.9
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "mast_joint_test_left.stl",
+      "sha256": "82d455cbe3b7d127c1d5edb2d60a77e57e3f93347d468b2fa527d0748cda8c4e",
+      "raw_stl_triangles": 790,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 395,
+          "faces": 790,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              61.3522,
+              14.0,
+              17.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 1,
+          "above_bed_downward_area_mm2": 0.0001,
+          "bed_contact_area_mm2": 620.1544,
+          "signed_volume_mm3": 8530.87,
+          "min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_mm": [
+            61.3522,
+            14.0,
+            17.0
+          ],
+          "dimensions_mm": [
+            61.3522,
+            14.0,
+            17.0
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "mast_joint_test_right.stl",
+      "sha256": "63e93cc90a6129b459a69020f5053cdfebea127d88ccac3ca020009b0f98b8f6",
+      "raw_stl_triangles": 604,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 302,
+          "faces": 604,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              61.3522,
+              14.0,
+              17.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 0,
+          "above_bed_downward_area_mm2": 0,
+          "bed_contact_area_mm2": 620.1544,
+          "signed_volume_mm3": 8600.535,
+          "min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_mm": [
+            61.3522,
+            14.0,
+            17.0
+          ],
+          "dimensions_mm": [
+            61.3522,
+            14.0,
+            17.0
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "mast_left.stl",
+      "sha256": "2b04c00480fa5d1dfc57c1fd8298a555cc047a7b5795499f035634bf3bb28cde",
+      "raw_stl_triangles": 10194,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 5093,
+          "faces": 10194,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              190.89999,
+              39.0,
+              26.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 1,
+          "above_bed_downward_area_mm2": 0.0001,
+          "bed_contact_area_mm2": 2348.8523,
+          "signed_volume_mm3": 35715.799,
+          "min_mm": [
+            0.0,
+            -14.55,
+            0.0
+          ],
+          "max_mm": [
+            190.9,
+            24.45,
+            26.0
+          ],
+          "dimensions_mm": [
+            190.9,
+            39.0,
+            26.0
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "mast_right.stl",
+      "sha256": "47159f143345a60bb1563603c8edca620398257f9e38e969bf95a91d97090a95",
+      "raw_stl_triangles": 9542,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 4767,
+          "faces": 9542,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              190.89999,
+              39.0,
+              26.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 0,
+          "above_bed_downward_area_mm2": 0,
+          "bed_contact_area_mm2": 2348.8524,
+          "signed_volume_mm3": 35792.069,
+          "min_mm": [
+            0.0,
+            -14.55,
+            0.0
+          ],
+          "max_mm": [
+            190.9,
+            24.45,
+            26.0
+          ],
+          "dimensions_mm": [
+            190.9,
+            39.0,
+            26.0
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "mini_pocket_tests.stl",
+      "sha256": "9eee33be1f125ff0d728531679dbc49409833d85617de778f2b3d357d63ddac4",
+      "raw_stl_triangles": 13380,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 6696,
+          "faces": 13380,
+          "components": 3,
+          "component_dimensions_mm": [
+            [
+              81.28,
+              64.50999,
+              10.0
+            ],
+            [
+              80.48,
+              63.71,
+              10.0
+            ],
+            [
+              80.88,
+              64.11,
+              10.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 0,
+          "above_bed_downward_area_mm2": 0,
+          "bed_contact_area_mm2": 13540.3622,
+          "signed_volume_mm3": 40978.518,
+          "min_mm": [
+            -40.64,
+            -38.555,
+            0.0
+          ],
+          "max_mm": [
+            40.64,
+            166.575,
+            10.0
+          ],
+          "dimensions_mm": [
+            81.28,
+            205.13,
+            10.0
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "reference_cables.stl",
+      "sha256": "9d2444a75ac1316b34eef081697771e215ac3fab28259b722a5f15dc55ad4059",
+      "raw_stl_triangles": 730,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 369,
+          "faces": 730,
+          "components": 2,
+          "component_dimensions_mm": [
+            [
+              8.0,
+              26.88289,
+              23.98289
+            ],
+            [
+              30.0,
+              10.0,
+              7.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 378,
+          "above_bed_downward_area_mm2": 416.0703,
+          "bed_contact_area_mm2": 0,
+          "signed_volume_mm3": 2615.975,
+          "min_mm": [
+            -67.5,
+            29.8,
+            2.0171
+          ],
+          "max_mm": [
+            71.0,
+            103.3829,
+            38.5
+          ],
+          "dimensions_mm": [
+            138.5,
+            73.5829,
+            36.4829
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "reference_cards.stl",
+      "sha256": "7052f5f22bcb32cdb743c33dcaf70ea9506d936390a37d778c32fb26aaed4cb3",
+      "raw_stl_triangles": 204,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 104,
+          "faces": 204,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              85.6,
+              16.0,
+              54.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 50,
+          "above_bed_downward_area_mm2": 1369.2868,
+          "bed_contact_area_mm2": 0,
+          "signed_volume_mm3": 73941.537,
+          "min_mm": [
+            -42.8,
+            56.6,
+            8.0
+          ],
+          "max_mm": [
+            42.8,
+            72.6,
+            62.0
+          ],
+          "dimensions_mm": [
+            85.6,
+            16.0,
+            54.0
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "reference_fasteners.stl",
+      "sha256": "5665b74d6a3f3ae2db289450fe66752850d5593b2fd270501d8a822f0363b38d",
+      "raw_stl_triangles": 1956,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 942,
+          "faces": 1956,
+          "components": 3,
+          "component_dimensions_mm": [
+            [
+              23.0,
+              5.5,
+              6.35086
+            ],
+            [
+              23.0,
+              5.5,
+              6.35085
+            ],
+            [
+              23.0,
+              5.5,
+              6.35085
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 528,
+          "above_bed_downward_area_mm2": 389.212,
+          "bed_contact_area_mm2": 0,
+          "signed_volume_mm3": 773.991,
+          "min_mm": [
+            -11.6,
+            77.4755,
+            56.7768
+          ],
+          "max_mm": [
+            11.4,
+            84.5745,
+            162.2032
+          ],
+          "dimensions_mm": [
+            23.0,
+            7.099,
+            105.4265
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "reference_headphones.stl",
+      "sha256": "da29a7dfe814019d3effee7b5671cf31f249e9cc7329a8825d7ddb5c2a367067",
+      "raw_stl_triangles": 1068,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 536,
+          "faces": 1068,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              150.0,
+              76.0,
+              180.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 248,
+          "above_bed_downward_area_mm2": 8493.3594,
+          "bed_contact_area_mm2": 0,
+          "signed_volume_mm3": 363974.295,
+          "min_mm": [
+            -75.0,
+            42.0,
+            26.0
+          ],
+          "max_mm": [
+            75.0,
+            118.0,
+            206.0
+          ],
+          "dimensions_mm": [
+            150.0,
+            76.0,
+            180.0
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "reference_mini.stl",
+      "sha256": "42a1f58784ea1ac8273760ef3eca7655bd8b75c5c4f5d2f1aa10dcc0efe96d7f",
+      "raw_stl_triangles": 204,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 104,
+          "faces": 204,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              82.0,
+              48.0,
+              78.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 50,
+          "above_bed_downward_area_mm2": 3904.7747,
+          "bed_contact_area_mm2": 0,
+          "signed_volume_mm3": 304572.417,
+          "min_mm": [
+            -41.0,
+            3.8,
+            8.0
+          ],
+          "max_mm": [
+            41.0,
+            51.8,
+            86.0
+          ],
+          "dimensions_mm": [
+            82.0,
+            48.0,
+            78.0
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "saddle_test_left.stl",
+      "sha256": "9e148a0cd9a906f82c1057a50ac6fbfb7d2fa6b5ceff743599647fcee63fcfd7",
+      "raw_stl_triangles": 9108,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 4554,
+          "faces": 9108,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              50.4722,
+              39.0,
+              26.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 0,
+          "above_bed_downward_area_mm2": 0,
+          "bed_contact_area_mm2": 944.4429,
+          "signed_volume_mm3": 17982.616,
+          "min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_mm": [
+            50.4722,
+            39.0,
+            26.0
+          ],
+          "dimensions_mm": [
+            50.4722,
+            39.0,
+            26.0
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "saddle_test_right.stl",
+      "sha256": "692d90c419b37641436832a9a52576ffdc6d053dd12d2aa9634b0dd98c5d4da1",
+      "raw_stl_triangles": 8822,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 4411,
+          "faces": 8822,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              50.4722,
+              39.0,
+              26.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 0,
+          "above_bed_downward_area_mm2": 0,
+          "bed_contact_area_mm2": 944.443,
+          "signed_volume_mm3": 17985.919,
+          "min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_mm": [
+            50.4722,
+            39.0,
+            26.0
+          ],
+          "dimensions_mm": [
+            50.4722,
+            39.0,
+            26.0
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    },
+    {
+      "file": "shared_cable_test.stl",
+      "sha256": "0d2282d3c1f16aad17b1389a293d07eb40f601fd2c0a1b0c8f2d51b65c7ac1da",
+      "raw_stl_triangles": 2358,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 1179,
+          "faces": 2358,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              40.0,
+              57.0,
+              8.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 850,
+          "above_bed_downward_area_mm2": 405.6679,
+          "bed_contact_area_mm2": 1413.6378,
+          "signed_volume_mm3": 12841.33,
+          "min_mm": [
+            -20.0,
+            -17.0,
+            0.0
+          ],
+          "max_mm": [
+            20.0,
+            40.0,
+            8.0
+          ],
+          "dimensions_mm": [
+            40.0,
+            57.0,
+            8.0
+          ],
+          "closed_oriented_mesh": true
+        }
+      ]
+    }
+  ],
+  "intersection_probes": [
+    {
+      "file": "device_interference.stl",
+      "sha256": "3f2c500fbd699116a85a8f9bae444c65a0c16b03273cd38ef2420df9fdbbf4aa",
+      "raw_stl_triangles": 36,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 24,
+          "faces": 36,
+          "components": 3,
+          "component_dimensions_mm": [
+            [
+              73.06113,
+              0.2,
+              0.0
+            ],
+            [
+              78.68181,
+              44.81511,
+              0.0
+            ],
+            [
+              85.59034,
+              15.99901,
+              0.0
+            ]
+          ],
+          "nonmanifold_edges": 1,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 18,
+          "above_bed_downward_area_mm2": 2167.1253,
+          "bed_contact_area_mm2": 0,
+          "signed_volume_mm3": -0.0,
+          "min_mm": [
+            -42.7952,
+            3.8,
+            8.0
+          ],
+          "max_mm": [
+            42.7952,
+            72.599,
+            8.0
+          ],
+          "dimensions_mm": [
+            85.5903,
+            68.799,
+            0.0
+          ],
+          "closed_oriented_mesh": false,
+          "zero_volume_planar_contact": true
+        }
+      ]
+    },
+    {
+      "file": "interference.stl",
+      "sha256": "2a1af9d581a80de30ed4ddcfde7540dd8c8d0ebba7c52bb2d5052f2117c0866a",
+      "raw_stl_triangles": 104,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 55,
+          "faces": 104,
+          "components": 1,
+          "component_dimensions_mm": [
+            [
+              34.0,
+              14.0,
+              0.0
+            ]
+          ],
+          "nonmanifold_edges": 0,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 52,
+          "above_bed_downward_area_mm2": 120.6268,
+          "bed_contact_area_mm2": 0,
+          "signed_volume_mm3": -0.0,
+          "min_mm": [
+            -17.0,
+            75.05,
+            41.98
+          ],
+          "max_mm": [
+            17.0,
+            89.05,
+            41.98
+          ],
+          "dimensions_mm": [
+            34.0,
+            14.0,
+            0.0
+          ],
+          "closed_oriented_mesh": false,
+          "zero_volume_planar_contact": true
+        }
+      ]
+    },
+    {
+      "file": "mast_halves_interference.stl",
+      "sha256": "f67666d330ce7445701e9f7bcabf9e912a35cbb481d51e8a68859046e3e0db46",
+      "raw_stl_triangles": 1136,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 633,
+          "faces": 1136,
+          "components": 33,
+          "component_dimensions_mm": [
+            [
+              0.0,
+              0.21937,
+              0.4439
+            ],
+            [
+              0.0,
+              0.04689,
+              0.35748
+            ],
+            [
+              0.0,
+              0.32348,
+              0.90846
+            ],
+            [
+              0.0,
+              0.39475,
+              1.07716
+            ],
+            [
+              0.0,
+              0.6522,
+              1.67534
+            ],
+            [
+              0.0,
+              1.87965,
+              3.41081
+            ],
+            [
+              0.0,
+              0.92171,
+              16.12972
+            ],
+            [
+              0.0,
+              0.28807,
+              4.26537
+            ],
+            [
+              0.0,
+              0.2677,
+              2.2787
+            ],
+            [
+              0.0,
+              0.21455,
+              0.84441
+            ],
+            [
+              0.0,
+              0.728,
+              1.89526
+            ],
+            [
+              0.0,
+              0.52169,
+              17.31512
+            ],
+            [
+              0.0,
+              7.46227,
+              97.55411
+            ],
+            [
+              0.0,
+              3.15874,
+              49.73195
+            ],
+            [
+              0.0,
+              0.22477,
+              4.82488
+            ],
+            [
+              0.0,
+              0.18439,
+              3.25137
+            ],
+            [
+              0.0,
+              0.72205,
+              1.93791
+            ],
+            [
+              0.0,
+              4.37941,
+              45.30601
+            ],
+            [
+              0.0,
+              0.19797,
+              3.36255
+            ],
+            [
+              0.0,
+              1.80739,
+              20.49867
+            ],
+            [
+              0.0,
+              0.28865,
+              3.84023
+            ],
+            [
+              0.0,
+              8.76316,
+              22.0
+            ],
+            [
+              0.0,
+              12.0,
+              13.53731
+            ],
+            [
+              0.0,
+              4.0,
+              1.375
+            ],
+            [
+              0.0,
+              0.00912,
+              0.03275
+            ],
+            [
+              0.0,
+              0.00256,
+              0.02165
+            ],
+            [
+              0.0,
+              10.0,
+              33.38
+            ],
+            [
+              0.0,
+              0.04119,
+              0.80199
+            ],
+            [
+              0.0,
+              1.19894,
+              4.56171
+            ],
+            [
+              0.0,
+              0.52161,
+              1.4078
+            ],
+            [
+              0.0,
+              0.34978,
+              1.30651
+            ],
+            [
+              0.0,
+              0.1998,
+              0.63456
+            ],
+            [
+              0.0,
+              0.57013,
+              0.35326
+            ]
+          ],
+          "nonmanifold_edges": 5,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 2,
+          "above_bed_downward_faces": 0,
+          "above_bed_downward_area_mm2": 0,
+          "bed_contact_area_mm2": 0,
+          "signed_volume_mm3": 0.0,
+          "min_mm": [
+            0.0,
+            -20.55,
+            0.0
+          ],
+          "max_mm": [
+            0.0,
+            11.45,
+            189.15
+          ],
+          "dimensions_mm": [
+            0.0,
+            32.0,
+            189.15
+          ],
+          "closed_oriented_mesh": false,
+          "zero_volume_planar_contact": true
+        }
+      ]
+    },
+    {
+      "file": "mast_hardware_interference.stl",
+      "sha256": "5f502f0354f94886f2d1f52e82a8a531712346f1dfe1539b98db380b79aec6dd",
+      "raw_stl_triangles": 454,
+      "raw_degenerate_triangles": 0,
+      "objects": [
+        {
+          "vertices": 320,
+          "faces": 454,
+          "components": 40,
+          "component_dimensions_mm": [
+            [
+              0.0,
+              1.90686,
+              0.59406
+            ],
+            [
+              0.0,
+              1.06454,
+              1.71683
+            ],
+            [
+              0.0,
+              1.90686,
+              1.0515
+            ],
+            [
+              0.0,
+              0.08127,
+              2.43437
+            ],
+            [
+              0.0,
+              0.05738,
+              3.98973
+            ],
+            [
+              0.0,
+              0.15898,
+              1.27898
+            ],
+            [
+              0.0,
+              0.82516,
+              1.35815
+            ],
+            [
+              0.0,
+              0.11346,
+              1.30402
+            ],
+            [
+              0.0,
+              0.45168,
+              1.06842
+            ],
+            [
+              0.0,
+              0.30558,
+              1.37032
+            ],
+            [
+              0.0,
+              0.06651,
+              1.29604
+            ],
+            [
+              0.0,
+              0.71979,
+              4.36344
+            ],
+            [
+              0.0,
+              0.25247,
+              2.75
+            ],
+            [
+              0.0,
+              1.14059,
+              3.08593
+            ],
+            [
+              0.0,
+              1.82008,
+              0.59405
+            ],
+            [
+              0.0,
+              1.30873,
+              0.22978
+            ],
+            [
+              0.0,
+              1.90993,
+              0.10947
+            ],
+            [
+              0.0,
+              0.80759,
+              4.28816
+            ],
+            [
+              0.0,
+              0.31857,
+              1.14503
+            ],
+            [
+              0.0,
+              1.19342,
+              1.922
+            ],
+            [
+              0.0,
+              0.46772,
+              1.30727
+            ],
+            [
+              0.0,
+              0.43703,
+              3.61864
+            ],
+            [
+              0.0,
+              0.16509,
+              1.20199
+            ],
+            [
+              0.0,
+              0.10666,
+              2.02351
+            ],
+            [
+              0.0,
+              1.82008,
+              0.46203
+            ],
+            [
+              0.0,
+              1.84041,
+              0.10947
+            ],
+            [
+              0.0,
+              1.82008,
+              0.45498
+            ],
+            [
+              0.0,
+              1.84041,
+              0.10947
+            ],
+            [
+              0.0,
+              0.06532,
+              1.13812
+            ],
+            [
+              0.0,
+              0.17425,
+              1.4653
+            ],
+            [
+              0.0,
+              0.15163,
+              1.21985
+            ],
+            [
+              0.0,
+              0.28562,
+              1.17949
+            ],
+            [
+              0.0,
+              0.23837,
+              1.27289
+            ],
+            [
+              0.0,
+              0.44321,
+              1.04384
+            ],
+            [
+              0.0,
+              0.43551,
+              1.08569
+            ],
+            [
+              0.0,
+              0.77404,
+              1.1586
+            ],
+            [
+              0.0,
+              0.46181,
+              1.18405
+            ],
+            [
+              0.0,
+              0.30558,
+              1.37032
+            ],
+            [
+              0.0,
+              0.27045,
+              4.20184
+            ],
+            [
+              0.0,
+              0.06532,
+              0.92801
+            ]
+          ],
+          "nonmanifold_edges": 14,
+          "boundary_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "degenerate_faces": 0,
+          "above_bed_downward_faces": 0,
+          "above_bed_downward_area_mm2": 0,
+          "bed_contact_area_mm2": 0,
+          "signed_volume_mm3": 0.0,
+          "min_mm": [
+            -8.6,
+            -4.5745,
+            48.8115
+          ],
+          "max_mm": [
+            8.6,
+            2.4085,
+            153.0841
+          ],
+          "dimensions_mm": [
+            17.2,
+            6.983,
+            104.2726
+          ],
+          "closed_oriented_mesh": false,
+          "zero_volume_planar_contact": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No physical fit, dimensional accuracy, load, or tipping test.",
+    "Topology checks do not establish support-free printability or absence of every self-intersection.",
+    "Reference envelopes are illustrative, not scans or manufacturer CAD."
+  ]
+}

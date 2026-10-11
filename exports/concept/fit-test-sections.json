@@ -1,0 +1,188 @@
+{
+  "source_sha256": "3343084490774644959265f8d7ef8680c0d77805312143fff0439c1d635540e3",
+  "mini_pocket_tests": {
+    "section_z_mm": 5,
+    "closed_loops": [
+      {
+        "bounds_mm": [
+          [
+            -37.84,
+            -22.755
+          ],
+          [
+            37.84,
+            22.755
+          ]
+        ],
+        "width_mm": 75.68,
+        "depth_mm": 45.51
+      },
+      {
+        "bounds_mm": [
+          [
+            -40.24,
+            -25.155
+          ],
+          [
+            40.24,
+            25.155
+          ]
+        ],
+        "width_mm": 80.48,
+        "depth_mm": 50.31
+      },
+      {
+        "bounds_mm": [
+          [
+            -40.44,
+            45.155
+          ],
+          [
+            40.44,
+            95.865
+          ]
+        ],
+        "width_mm": 80.88,
+        "depth_mm": 50.71
+      },
+      {
+        "bounds_mm": [
+          [
+            -38.04,
+            47.555
+          ],
+          [
+            38.04,
+            93.465
+          ]
+        ],
+        "width_mm": 76.08,
+        "depth_mm": 45.91
+      },
+      {
+        "bounds_mm": [
+          [
+            -40.64,
+            115.465
+          ],
+          [
+            40.64,
+            166.575
+          ]
+        ],
+        "width_mm": 81.28,
+        "depth_mm": 51.11
+      },
+      {
+        "bounds_mm": [
+          [
+            -38.24,
+            117.865
+          ],
+          [
+            38.24,
+            164.175
+          ]
+        ],
+        "width_mm": 76.48,
+        "depth_mm": 46.31
+      }
+    ],
+    "inner_loops": [
+      {
+        "bounds_mm": [
+          [
+            -37.84,
+            -22.755
+          ],
+          [
+            37.84,
+            22.755
+          ]
+        ],
+        "width_mm": 75.68,
+        "depth_mm": 45.51
+      },
+      {
+        "bounds_mm": [
+          [
+            -38.04,
+            47.555
+          ],
+          [
+            38.04,
+            93.465
+          ]
+        ],
+        "width_mm": 76.08,
+        "depth_mm": 45.91
+      },
+      {
+        "bounds_mm": [
+          [
+            -38.24,
+            117.865
+          ],
+          [
+            38.24,
+            164.175
+          ]
+        ],
+        "width_mm": 76.48,
+        "depth_mm": 46.31
+      }
+    ],
+    "expected_inner_dimensions_pass": true,
+    "source_sha256": "3343084490774644959265f8d7ef8680c0d77805312143fff0439c1d635540e3",
+    "tested_source_sha256": "776f47a7fe91655f915cc543b7f507a7bed0a943e738384a4c4c07ebec3464a7",
+    "mesh_sha256": "9eee33be1f125ff0d728531679dbc49409833d85617de778f2b3d357d63ddac4",
+    "reuse_basis": "The regenerated final-source mesh has the exact same hash as the independently sectioned mesh."
+  },
+  "shared_cable_test": {
+    "mesh_sha256": "0d2282d3c1f16aad17b1389a293d07eb40f601fd2c0a1b0c8f2d51b65c7ac1da",
+    "section_z_mm": 5,
+    "section_bounds_mm": [
+      [
+        [
+          -12.0,
+          -9.0
+        ],
+        [
+          12.0,
+          9.0
+        ]
+      ],
+      [
+        [
+          -20.0,
+          -17.0
+        ],
+        [
+          20.0,
+          40.0
+        ]
+      ]
+    ],
+    "expected_throat_mm": [
+      24,
+      18
+    ],
+    "expected_dimensions_pass": true,
+    "verification_basis": "Independent STL section at Z5; exact tested mesh hash matches integrated export."
+  },
+  "limitations": "Nominal digital dimensions only; all real hardware fit and print outcomes remain unverified.",
+  "previous_verified_source_sha256": "1a470a2fcb553b358990ea9da16c3e79aa0175a78e3fc02b23a780248d25e0c3",
+  "reuse_basis": "Both final sample STL hashes are unchanged from the independently sectioned meshes. Local functional passage dimensions remain unchanged; the new sculpt outside the recessed deck and rear roof height are not reproduced by this flat coupon.",
+  "width_trial_source_reuse_verification": {
+    "current_source_sha256": "a45d9c462b4d951877e01c3c067810aa029bcf7fecc1995a15dd1f5e264d7b68",
+    "baseline_source_sha256": "3343084490774644959265f8d7ef8680c0d77805312143fff0439c1d635540e3",
+    "basis": "Only a pure read-only fit-parameter accessor was added to the main source. All21 existing exports in each layout were regenerated and are byte-identical to the previously checked meshes. No station or existing sample geometry changed. New width samples are separately checked in exports/mini-width-tests.",
+    "current_base_sha256": "371623b9d6a4682e5201035a7f6057c2eb81c2a5a3d40f985a80b444fc6db370",
+    "side_exports_unchanged": 21,
+    "rear_exports_unchanged": 21
+  },
+  "selected_fit_reuse": {
+    "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+    "basis": "Exact sample STL hashes unchanged after current export."
+  }
+}

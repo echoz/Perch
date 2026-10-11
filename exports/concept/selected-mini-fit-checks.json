@@ -1,0 +1,346 @@
+{
+  "date": "2026-10-11",
+  "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+  "baseline_source_sha256": "a45d9c462b4d951877e01c3c067810aa029bcf7fecc1995a15dd1f5e264d7b68",
+  "base_sha256": "c53ef52abc17d5e50a87fe9da964a739e0b70a08e2a4e743f6e101ed1a4e2a56",
+  "selection": {
+    "label": "W0.1",
+    "opening_mm": [
+      75.28,
+      45.51
+    ],
+    "inside_radius_mm": 6.3,
+    "measured_body_mm": [
+      75.08,
+      44.91
+    ],
+    "clearance_per_side_mm": [
+      0.1,
+      0.3
+    ],
+    "center_xy_mm": [
+      32.2,
+      30.8
+    ],
+    "floor_z_mm": 8,
+    "evidence": "User selected W0.1; explicit prior printed-fit feedback applies to original 0.3 sample. Full-station physical fit pending."
+  },
+  "preserved_card_cavity": {
+    "opening_mm": [
+      55.4,
+      49.6
+    ],
+    "inside_radius_mm": 0.8,
+    "center_xy_mm": [
+      -46.3,
+      30.8
+    ]
+  },
+  "preserved_footprint_mm": [
+    160,
+    121.8
+  ],
+  "modeled_loaded_bounds_mm": {
+    "min": [
+      -80.0,
+      0.0,
+      0.0
+    ],
+    "max": [
+      87.74,
+      139.8,
+      206.0
+    ],
+    "size": [
+      167.74,
+      139.8,
+      206.0
+    ]
+  },
+  "layout_regressions": {
+    "side": {
+      "changed_parts": [
+        "base",
+        "assembled",
+        "reference_mini",
+        "reference_cables"
+      ],
+      "byte_identical_parts": [
+        "mast",
+        "installed_mast",
+        "cradle_test",
+        "joint_test",
+        "card_test",
+        "mast_left",
+        "mast_right",
+        "mast_joint_test_left",
+        "mast_joint_test_right",
+        "full_socket_test",
+        "saddle_test_left",
+        "saddle_test_right",
+        "mini_pocket_tests",
+        "shared_cable_test",
+        "reference_cards",
+        "reference_headphones",
+        "reference_fasteners"
+      ],
+      "all_21_closed_oriented": true,
+      "six_probes_no_positive_volume": true
+    },
+    "rear": {
+      "changed_parts": [],
+      "byte_identical_parts": [
+        "base",
+        "mast",
+        "installed_mast",
+        "assembled",
+        "cradle_test",
+        "joint_test",
+        "card_test",
+        "mast_left",
+        "mast_right",
+        "mast_joint_test_left",
+        "mast_joint_test_right",
+        "full_socket_test",
+        "saddle_test_left",
+        "saddle_test_right",
+        "mini_pocket_tests",
+        "shared_cable_test",
+        "reference_mini",
+        "reference_cards",
+        "reference_headphones",
+        "reference_cables",
+        "reference_fasteners"
+      ],
+      "all_21_closed_oriented": true,
+      "six_probes_no_positive_volume": true
+    }
+  },
+  "independent_mesh_measurements": {
+    "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+    "baseline_source_sha256": "a45d9c462b4d951877e01c3c067810aa029bcf7fecc1995a15dd1f5e264d7b68",
+    "baseline": {
+      "sha256": "371623b9d6a4682e5201035a7f6057c2eb81c2a5a3d40f985a80b444fc6db370",
+      "vertices": 132503,
+      "faces": 265006,
+      "volume_mm3": 286594.93398868,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "degenerate_faces": 0,
+      "min_mm": [
+        -80.0,
+        1.4901218037266517e-09,
+        0.0
+      ],
+      "max_mm": [
+        80.0,
+        121.80000305175781,
+        72.99962615966797
+      ]
+    },
+    "candidate": {
+      "sha256": "c53ef52abc17d5e50a87fe9da964a739e0b70a08e2a4e743f6e101ed1a4e2a56",
+      "vertices": 140313,
+      "faces": 280626,
+      "volume_mm3": 294458.7689345818,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "degenerate_faces": 0,
+      "min_mm": [
+        -80.0,
+        1.4901218037266517e-09,
+        0.0
+      ],
+      "max_mm": [
+        80.0,
+        121.80000305175781,
+        72.99962615966797
+      ]
+    },
+    "selected_W01_coupon": {
+      "sha256": "bf04d6a22bbe6e91a0feba96e69f95cc2fae556bd1f96cc64ff3e540827ae5a5",
+      "vertices": 1588,
+      "faces": 3172,
+      "volume_mm3": 13481.43412926735,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "degenerate_faces": 0,
+      "min_mm": [
+        -40.040000915527344,
+        -38.55500030517578,
+        0.0
+      ],
+      "max_mm": [
+        40.040000915527344,
+        25.155000686645508,
+        10.0
+      ]
+    },
+    "coupon_wall_match": {
+      "ray_count": 5760,
+      "levels_mm": [
+        8.05,
+        9,
+        12,
+        13.5
+      ],
+      "max_xy_error_mm": 1.677165827419015e-05,
+      "missing_rays": [],
+      "axis_hits_at_z9": {
+        "0": [
+          69.83999633789062,
+          30.799999237060547,
+          9.0
+        ],
+        "360": [
+          32.20000076293945,
+          53.55500030517578,
+          9.0
+        ],
+        "720": [
+          -5.439994812011719,
+          30.799999237060547,
+          9.0
+        ],
+        "1080": [
+          32.20000076293945,
+          8.045000076293945,
+          9.0
+        ]
+      }
+    },
+    "full_height_cavity_sampling": {
+      "count": 13396,
+      "upward_hits": [],
+      "upward_hit_count": 0,
+      "max_floor_error_mm": 0.0,
+      "scope": "0.5 mm grid, >0.03 mm inside analytic rounded rectangle; sampled, not exhaustive Boolean proof"
+    },
+    "preserved_exterior_sampling": {
+      "count": 27474,
+      "missing_differences": [],
+      "max_z_error_mm": 4.57763671875e-05,
+      "worst_10": [
+        [
+          4.57763671875e-05,
+          -7.150000000000006,
+          54.1,
+          23.9945068359375,
+          23.994552612304688
+        ],
+        [
+          3.0517578125e-05,
+          72.35,
+          53.35,
+          23.96795654296875,
+          23.967926025390625
+        ],
+        [
+          3.0517578125e-05,
+          71.6,
+          54.1,
+          23.9991455078125,
+          23.999176025390625
+        ],
+        [
+          3.0517578125e-05,
+          -7.900000000000006,
+          53.35,
+          23.986648559570312,
+          23.986679077148438
+        ],
+        [
+          1.52587890625e-05,
+          70.85,
+          6.85,
+          14.05731201171875,
+          14.057296752929688
+        ],
+        [
+          1.52587890625e-05,
+          68.6,
+          55.6,
+          24.039169311523438,
+          24.039154052734375
+        ],
+        [
+          1.52587890625e-05,
+          -4.150000000000006,
+          6.1,
+          14.019561767578125,
+          14.019546508789062
+        ],
+        [
+          0.0,
+          79.85,
+          114.85,
+          2.9334564208984375,
+          2.9334564208984375
+        ],
+        [
+          0.0,
+          79.85,
+          114.1,
+          3.126251220703125,
+          3.126251220703125
+        ],
+        [
+          0.0,
+          79.85,
+          113.35,
+          3.14312744140625,
+          3.14312744140625
+        ]
+      ],
+      "scope": "0.75 mm XY grid excluding old cavity; includes floor inside cards and surface outside their cavity"
+    },
+    "card_preservation": {
+      "rays": 2862,
+      "missing_differences": [],
+      "max_error_mm": 0.0
+    }
+  },
+  "complete_masks": {
+    "date": "2026-10-11",
+    "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+    "base_sha256": "c53ef52abc17d5e50a87fe9da964a739e0b70a08e2a4e743f6e101ed1a4e2a56",
+    "inset_mm": 0.01,
+    "scope": "Independent literal full-height cavity, key and cable masks against imported final base. Digital geometry only.",
+    "tests": [
+      {
+        "name": "mini",
+        "exit_code": 1,
+        "result": "empty intersection",
+        "probe_source": "// Independent nominal-pocket probe, numerical inset0.01mm.\n$fn=48;\nintersection() {\n    import(\"/Users/jeremy/Documents/Codex/Yoto/exports/concept/base.stl\");\n    translate([32.2,30.8,8.01]) linear_extrude(height=90)\n        offset(delta=-0.01) hull() {\n            for (sx=[-1,1],sy=[-1,1])\n                translate([sx*(75.28/2-6.3),sy*(45.51/2-6.3)]) circle(r=6.3);\n        }\n}\n"
+      },
+      {
+        "name": "cards",
+        "exit_code": 1,
+        "result": "empty intersection",
+        "probe_source": "// Independent nominal-pocket probe, numerical inset0.01mm.\n$fn=48;\nintersection() {\n    import(\"/Users/jeremy/Documents/Codex/Yoto/exports/concept/base.stl\");\n    translate([-46.3,30.8,8.01]) linear_extrude(height=90)\n        offset(delta=-0.01) hull() {\n            for (sx=[-1,1],sy=[-1,1])\n                translate([sx*(55.4/2-0.8),sy*(49.6/2-0.8)]) circle(r=0.8);\n        }\n}\n"
+      },
+      {
+        "name": "mast_opening",
+        "exit_code": 1,
+        "result": "empty intersection",
+        "probe_source": "// Independent complete keyed opening, 0.01 mm horizontal/floor inset.\n$fn=48;\nintersection() {\n    import(\"/Users/jeremy/Documents/Codex/Yoto/exports/concept/base.stl\");\n    translate([0,71,8.01]) linear_extrude(height=90)\n        offset(delta=0.34)\n            polygon([[-15,-5],[15,-5],[15,5],[-13,5],[-15,3]]);\n}\n"
+      },
+      {
+        "name": "cable_opening",
+        "exit_code": 1,
+        "result": "empty intersection",
+        "probe_source": "// Full-height cable throat, independently specified with 0.01 mm inset.\n$fn=48;\nintersection() {\n    import(\"/Users/jeremy/Documents/Codex/Yoto/exports/concept/base.stl\");\n    translate([39,75,-0.01]) linear_extrude(height=100)\n        offset(delta=-0.01) hull() {\n            for (sx=[-1,1],sy=[-1,1])\n                translate([sx*(24/2-4),sy*(18/2-4)]) circle(r=4);\n        }\n}\n"
+      },
+      {
+        "name": "cable_trough",
+        "exit_code": 1,
+        "result": "empty intersection",
+        "probe_source": "// Independent intended underside route and full-height rear relief.\nintersection() {\n    import(\"/Users/jeremy/Documents/Codex/Yoto/exports/concept/base.stl\");\n    union() {\n        translate([33.01,75.01,0.01]) cube([11.98,46.78,4.58]);\n        translate([33.01,115.81,0.01]) cube([11.98,5.98,99]);\n    }\n}\n"
+      }
+    ]
+  },
+  "limits": [
+    "CAD and exported-mesh verification only.",
+    "Full-height physical fit, cable-plug passage, headphones, print finish, strength and stability remain unverified."
+  ]
+}

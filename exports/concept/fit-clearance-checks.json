@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-11",
+  "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+  "base_sha256": "c53ef52abc17d5e50a87fe9da964a739e0b70a08e2a4e743f6e101ed1a4e2a56",
+  "inset_mm": 0.01,
+  "scope": "Independent literal full-height cavity, key and cable masks against imported final base. Digital geometry only.",
+  "tests": [
+    {
+      "name": "mini",
+      "exit_code": 1,
+      "result": "empty intersection",
+      "probe_source": "// Independent nominal-pocket probe, numerical inset0.01mm.\n$fn=48;\nintersection() {\n    import(\"/Users/jeremy/Documents/Codex/Yoto/exports/concept/base.stl\");\n    translate([32.2,30.8,8.01]) linear_extrude(height=90)\n        offset(delta=-0.01) hull() {\n            for (sx=[-1,1],sy=[-1,1])\n                translate([sx*(75.28/2-6.3),sy*(45.51/2-6.3)]) circle(r=6.3);\n        }\n}\n"
+    },
+    {
+      "name": "cards",
+      "exit_code": 1,
+      "result": "empty intersection",
+      "probe_source": "// Independent nominal-pocket probe, numerical inset0.01mm.\n$fn=48;\nintersection() {\n    import(\"/Users/jeremy/Documents/Codex/Yoto/exports/concept/base.stl\");\n    translate([-46.3,30.8,8.01]) linear_extrude(height=90)\n        offset(delta=-0.01) hull() {\n            for (sx=[-1,1],sy=[-1,1])\n                translate([sx*(55.4/2-0.8),sy*(49.6/2-0.8)]) circle(r=0.8);\n        }\n}\n"
+    },
+    {
+      "name": "mast_opening",
+      "exit_code": 1,
+      "result": "empty intersection",
+      "probe_source": "// Independent complete keyed opening, 0.01 mm horizontal/floor inset.\n$fn=48;\nintersection() {\n    import(\"/Users/jeremy/Documents/Codex/Yoto/exports/concept/base.stl\");\n    translate([0,71,8.01]) linear_extrude(height=90)\n        offset(delta=0.34)\n            polygon([[-15,-5],[15,-5],[15,5],[-13,5],[-15,3]]);\n}\n"
+    },
+    {
+      "name": "cable_opening",
+      "exit_code": 1,
+      "result": "empty intersection",
+      "probe_source": "// Full-height cable throat, independently specified with 0.01 mm inset.\n$fn=48;\nintersection() {\n    import(\"/Users/jeremy/Documents/Codex/Yoto/exports/concept/base.stl\");\n    translate([39,75,-0.01]) linear_extrude(height=100)\n        offset(delta=-0.01) hull() {\n            for (sx=[-1,1],sy=[-1,1])\n                translate([sx*(24/2-4),sy*(18/2-4)]) circle(r=4);\n        }\n}\n"
+    },
+    {
+      "name": "cable_trough",
+      "exit_code": 1,
+      "result": "empty intersection",
+      "probe_source": "// Independent intended underside route and full-height rear relief.\nintersection() {\n    import(\"/Users/jeremy/Documents/Codex/Yoto/exports/concept/base.stl\");\n    union() {\n        translate([33.01,75.01,0.01]) cube([11.98,46.78,4.58]);\n        translate([33.01,115.81,0.01]) cube([11.98,5.98,99]);\n    }\n}\n"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "source_hashes": {
+    "source_sha256": "66dac7d79570bf7bede32ebf8dd5672692aba3a53099acdc1889ebdf485e9733",
+    "master_source_sha256": "a45d9c462b4d951877e01c3c067810aa029bcf7fecc1995a15dd1f5e264d7b68",
+    "parts": [
+      {
+        "part": "mini_width_0_2",
+        "sha256": "d40fa780401418b0be46356664bf8c3b71c248fa93ae2aa4e5d06769b38afe21"
+      },
+      {
+        "part": "mini_width_0_1",
+        "sha256": "bf04d6a22bbe6e91a0feba96e69f95cc2fae556bd1f96cc64ff3e540827ae5a5"
+      },
+      {
+        "part": "mini_width_tests",
+        "sha256": "1bb118de43656653d7c656e65620fb138a59aebe9c3a97f91abb11917b7d98f3"
+      }
+    ]
+  },
+  "measurements": [
+    {
+      "part": "mini_width_0_2",
+      "cavity_sections": [
+        {
+          "z_mm": 2.1,
+          "inside_width_mm": 75.48,
+          "inside_depth_mm": 45.51
+        },
+        {
+          "z_mm": 6,
+          "inside_width_mm": 75.48,
+          "inside_depth_mm": 45.50999
+        },
+        {
+          "z_mm": 9.9,
+          "inside_width_mm": 75.48,
+          "inside_depth_mm": 45.51
+        }
+      ],
+      "floor_top_z_mm": 2.0,
+      "wall_height_above_floor_mm": 8.0,
+      "all_four_corners_sampled_radius_mm": [
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3
+      ],
+      "corner_wall_thickness_mm": [
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.39999,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.39999,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4
+      ],
+      "corner_measurement_method": "Ray through each selected polygon facet midpoint; divide by cos(3.75 degrees) to recover the nominal radius of the 48-segment circle."
+    },
+    {
+      "part": "mini_width_0_1",
+      "cavity_sections": [
+        {
+          "z_mm": 2.1,
+          "inside_width_mm": 75.28,
+          "inside_depth_mm": 45.51
+        },
+        {
+          "z_mm": 6,
+          "inside_width_mm": 75.28,
+          "inside_depth_mm": 45.51
+        },
+        {
+          "z_mm": 9.9,
+          "inside_width_mm": 75.28,
+          "inside_depth_mm": 45.51
+        }
+      ],
+      "floor_top_z_mm": 2.0,
+      "wall_height_above_floor_mm": 8.0,
+      "all_four_corners_sampled_radius_mm": [
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3,
+        6.3
+      ],
+      "corner_wall_thickness_mm": [
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4,
+        2.4
+      ],
+      "corner_measurement_method": "Ray through each selected polygon facet midpoint; divide by cos(3.75 degrees) to recover the nominal radius of the 48-segment circle."
+    }
+  ],
+  "limits": "Digital mesh and sampled sections only; no new physical fit, slicer or strength claim.",
+  "selected_fit_source_reuse": {
+    "master_source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+    "basis": "All three STLs freshly regenerated under current master and byte-identical to original exports.",
+    "selected_part": "mini_width_0_1"
+  }
+}

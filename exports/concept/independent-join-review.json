@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-10",
+  "source_sha256": "102c8555e0db29e500432874bea78cf34ae4c61e57b44b59609b341881a358f1",
+  "status": "Independent read-only source, raw-STL section and rendered-appearance review completed; no blocking findings",
+  "reviewer": "shared_cable_route; GPT-6-Astra high",
+  "scope": "Local seamless shared shoulder between card and player holders; preservation of device cavities and existing hardware/cable interfaces",
+  "findings": [],
+  "verified": {
+    "additive_join_between_rounded_crests": true,
+    "join_y_support_mm": [
+      0,
+      61.6
+    ],
+    "cavity_subtraction_after_exterior": true,
+    "unmodified_interfaces": [
+      "Card cavity",
+      "Mini cavity",
+      "Mast",
+      "Socket",
+      "Shared cable route",
+      "All fit coupons"
+    ],
+    "additional_raw_stl_section_y_mm": [
+      0.5,
+      3,
+      5,
+      7,
+      54.6,
+      56.6,
+      58.6,
+      61.1
+    ],
+    "samples_per_section": 201,
+    "max_local_crest_fluctuation_mm": 0.00354,
+    "base_dimensions_mm": [
+      160,
+      121.8,
+      72.9996
+    ],
+    "added_volume_cm3": 3.901,
+    "added_volume_percent": 1.85,
+    "base_mesh_sha256": "5844badf9d9da443e056552aacbb8ab88001e09a4f99767b4c9509841ff0bbd7"
+  },
+  "notes": [
+    "The former groove is removed through holder corners. At Y61.1 the retained mast shoulder rises toward the right; the whole rear surface is not globally monotone.",
+    "Front and detail renders show continuous joining without the former slit or abrupt corner seam.",
+    "Final source guard requires a positive crest span."
+  ],
+  "limits": [
+    "Digital geometry and appearance only; actual print finish, fit and strength unverified.",
+    "Parent integrated exports and checks are recorded separately."
+  ],
+  "reuse_verification": {
+    "current_source_sha256": "1a470a2fcb553b358990ea9da16c3e79aa0175a78e3fc02b23a780248d25e0c3",
+    "date": "2026-10-11",
+    "basis": "Exact coordinate equality of all fully contained above-floor triangles in the shared holder region: X=-26..6, Y=0..61.6001, all Z>8. Source review also confirms unchanged sculpted surface functions. Only cable cuts outside this region and lead references moved.",
+    "identical_region_triangles": 18031,
+    "region_sha256": "7c2661e983de7696771a4a08f6a7fb32941f47505acb0f6b3e12534a4715603a",
+    "current_base_sha256": "98709499512b73b315a6feb3529f4bcc7a7c7ba3709c992f5af694bfec2e4b2f"
+  },
+  "current_revision_scope": {
+    "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+    "status": "Historical revision evidence",
+    "note": "Original hashes and reuse records remain historical. Current W0.1 cavity and references are covered by selected-mini-fit-checks.json and independent-mini-fit-review.json. Exterior and card geometry were independently compared against the preceding base."
+  },
+  "width_trial_source_reuse_verification": {
+    "current_source_sha256": "a45d9c462b4d951877e01c3c067810aa029bcf7fecc1995a15dd1f5e264d7b68",
+    "baseline_source_sha256": "3343084490774644959265f8d7ef8680c0d77805312143fff0439c1d635540e3",
+    "basis": "Only a pure read-only fit-parameter accessor was added to the main source. All21 existing exports in each layout were regenerated and are byte-identical to the previously checked meshes. No station or existing sample geometry changed. New width samples are separately checked in exports/mini-width-tests.",
+    "current_base_sha256": "371623b9d6a4682e5201035a7f6057c2eb81c2a5a3d40f985a80b444fc6db370",
+    "side_exports_unchanged": 21,
+    "rear_exports_unchanged": 21
+  }
+}

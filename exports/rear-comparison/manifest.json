@@ -1,0 +1,138 @@
+{
+  "status": "Historical comparison; geometry unchanged",
+  "source": "cad/compact_dock.scad",
+  "source_sha256": "27033cdcc878502972a26fecb23bb483d896ae3ca85f914c5335ccda9cb28acd",
+  "units": "mm",
+  "layout": "rear",
+  "exports": [
+    {
+      "part": "base",
+      "file": "base.stl",
+      "sha256": "87267789c460541d7342eb4300c7c821c0b444409142b403197aacd589575b7c"
+    },
+    {
+      "part": "mast",
+      "file": "mast.stl",
+      "sha256": "5051ae0e864436713f71f665da22067ce0d0b76ed21a45f5c07799419c7e9bce"
+    },
+    {
+      "part": "installed_mast",
+      "file": "installed_mast.stl",
+      "sha256": "3e5a9f8dfafda258012209395a786564d594a8d70a77f1c6cfd71df32c06a455"
+    },
+    {
+      "part": "assembled",
+      "file": "assembled.stl",
+      "sha256": "e3844dd2a6ad20e87e86eb0353985a97cd0f295ee4cf7352d04f8c8e5264d425"
+    },
+    {
+      "part": "cradle_test",
+      "file": "cradle_test.stl",
+      "sha256": "d555965143fe4ccb89c67f3b1ce11f6880fd4b0179da96d796a63afb5ba74b56"
+    },
+    {
+      "part": "joint_test",
+      "file": "joint_test.stl",
+      "sha256": "ec0444d90679df47dc1a76397d87b541866edb0fdec70e4ea0c5dead15d4eb19"
+    },
+    {
+      "part": "card_test",
+      "file": "card_test.stl",
+      "sha256": "d8c7457d31a332a445120d554651c7632bb1e20447f29e058811bcf50605fd88"
+    },
+    {
+      "part": "mast_left",
+      "file": "mast_left.stl",
+      "sha256": "2b04c00480fa5d1dfc57c1fd8298a555cc047a7b5795499f035634bf3bb28cde"
+    },
+    {
+      "part": "mast_right",
+      "file": "mast_right.stl",
+      "sha256": "47159f143345a60bb1563603c8edca620398257f9e38e969bf95a91d97090a95"
+    },
+    {
+      "part": "mast_joint_test_left",
+      "file": "mast_joint_test_left.stl",
+      "sha256": "82d455cbe3b7d127c1d5edb2d60a77e57e3f93347d468b2fa527d0748cda8c4e"
+    },
+    {
+      "part": "mast_joint_test_right",
+      "file": "mast_joint_test_right.stl",
+      "sha256": "63e93cc90a6129b459a69020f5053cdfebea127d88ccac3ca020009b0f98b8f6"
+    },
+    {
+      "part": "full_socket_test",
+      "file": "full_socket_test.stl",
+      "sha256": "3951b923d4612670c1c731d5578efe52ee06581e9c1a38c3f097660b66a13e6e"
+    },
+    {
+      "part": "saddle_test_left",
+      "file": "saddle_test_left.stl",
+      "sha256": "9e148a0cd9a906f82c1057a50ac6fbfb7d2fa6b5ceff743599647fcee63fcfd7"
+    },
+    {
+      "part": "saddle_test_right",
+      "file": "saddle_test_right.stl",
+      "sha256": "692d90c419b37641436832a9a52576ffdc6d053dd12d2aa9634b0dd98c5d4da1"
+    },
+    {
+      "part": "mini_pocket_tests",
+      "file": "mini_pocket_tests.stl",
+      "sha256": "9eee33be1f125ff0d728531679dbc49409833d85617de778f2b3d357d63ddac4"
+    },
+    {
+      "part": "shared_cable_test",
+      "file": "shared_cable_test.stl",
+      "sha256": "0d2282d3c1f16aad17b1389a293d07eb40f601fd2c0a1b0c8f2d51b65c7ac1da"
+    },
+    {
+      "part": "reference_mini",
+      "file": "reference_mini.stl",
+      "sha256": "42a1f58784ea1ac8273760ef3eca7655bd8b75c5c4f5d2f1aa10dcc0efe96d7f"
+    },
+    {
+      "part": "reference_cards",
+      "file": "reference_cards.stl",
+      "sha256": "7052f5f22bcb32cdb743c33dcaf70ea9506d936390a37d778c32fb26aaed4cb3"
+    },
+    {
+      "part": "reference_headphones",
+      "file": "reference_headphones.stl",
+      "sha256": "da29a7dfe814019d3effee7b5671cf31f249e9cc7329a8825d7ddb5c2a367067"
+    },
+    {
+      "part": "reference_cables",
+      "file": "reference_cables.stl",
+      "sha256": "9d2444a75ac1316b34eef081697771e215ac3fab28259b722a5f15dc55ad4059"
+    },
+    {
+      "part": "reference_fasteners",
+      "file": "reference_fasteners.stl",
+      "sha256": "5665b74d6a3f3ae2db289450fe66752850d5593b2fd270501d8a822f0363b38d"
+    }
+  ],
+  "interference": {
+    "empty": false,
+    "exit_code": 0
+  },
+  "device_interference": {
+    "empty": false,
+    "exit_code": 0
+  },
+  "reference_interference": {
+    "empty": true,
+    "exit_code": 1
+  },
+  "mast_hardware_interference": {
+    "empty": false,
+    "exit_code": 0
+  },
+  "mast_halves_interference": {
+    "empty": false,
+    "exit_code": 0
+  },
+  "saddle_removal_interference": {
+    "empty": true,
+    "exit_code": 1
+  }
+}
