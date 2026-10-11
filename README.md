@@ -1,4 +1,4 @@
-# Yoto charging station
+# Perch
 
 A compact, 3D-printable tabletop home for a **Yoto Mini in its Adventure Jacket**,
 roughly **20 loose cards**, and **kids' headphones**. Cards sit on the left, the
@@ -16,16 +16,16 @@ but the complete station still needs physical fit and use checks.
 
 ## Download the print files
 
-**[Download the complete print ZIP](https://github.com/echoz/Yoto/releases/download/w01-candidate/yoto-concept-print-parts.zip)**
+**[Download the complete print ZIP](https://github.com/echoz/Perch/releases/download/w01-candidate/yoto-concept-print-parts.zip)**
 
 It contains the three main print parts, fit samples, assembly guide, previews
-and recorded geometry checks. The [candidate release](https://github.com/echoz/Yoto/releases/tag/w01-candidate)
+and recorded geometry checks. The [candidate release](https://github.com/echoz/Perch/releases/tag/w01-candidate)
 also provides these smaller packages:
 
 | Download | Contents |
 | --- | --- |
-| [Mini width samples](https://github.com/echoz/Yoto/releases/download/w01-candidate/yoto-mini-width-tests.zip) | Selected W0.1 pocket and the retained W0.2 alternative |
-| [Original fit samples](https://github.com/echoz/Yoto/releases/download/w01-candidate/yoto-fit-tests.zip) | Earlier Mini pocket trials and the shared two-cable passage test |
+| [Mini width samples](https://github.com/echoz/Perch/releases/download/w01-candidate/yoto-mini-width-tests.zip) | Selected W0.1 pocket and the retained W0.2 alternative |
+| [Original fit samples](https://github.com/echoz/Perch/releases/download/w01-candidate/yoto-fit-tests.zip) | Earlier Mini pocket trials and the shared two-cable passage test |
 
 If you already printed the preceding candidate's mast halves, keep them:
 **only `base.stl` changed** for the W0.1 fit revision.

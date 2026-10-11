@@ -1,4 +1,4 @@
-# Yoto charging station
+# Perch
 
 Follow the global working agreements and their applicable companion instructions.
 Read `cad/README.md` for current geometry, assumptions, and physical checks still

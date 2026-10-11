@@ -1,4 +1,4 @@
-# Sculpted charging station CAD
+# Perch CAD and assembly guide
 
 `compact_dock.scad` is the authoritative parameter source, in millimetres. This is
 an editable concept, **not a verified fit or production-ready print**. No external
@@ -90,7 +90,7 @@ not claims of printer accuracy. The earlier explicit physical feedback applies
 to the 0.3 sample; the W0.1 message records the user's selection.
 
 The separate `mini_width_tests.scad` entrypoint and its individual or combined
-STLs remain in [the width-test ZIP](https://github.com/echoz/Yoto/releases/download/w01-candidate/yoto-mini-width-tests.zip).
+STLs remain in [the width-test ZIP](https://github.com/echoz/Perch/releases/download/w01-candidate/yoto-mini-width-tests.zip).
 Reprinting them is optional unless the material, profile or scale changes.
 The combined pair occupies 80.28 × 133.42 × 10 mm; each separate sample occupies
 80.28/80.08 × 63.71 × 10 mm including its label tab. These are geometry bounds,
