@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "moduleRoots": [],
+  "modules": [],
+  "excludedModules": [],
+  "documents": ["README.md", "AGENTS.md", "LICENSE-SCOPE.md"],
+  "deliverables": [
+    {"id": "Perch.CAD", "root": "cad"},
+    {"id": "Perch.Authoring", "root": "scripts"},
+    {"id": "Perch.Website", "root": "docs"}
+  ]
+}

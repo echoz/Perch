@@ -126,6 +126,49 @@ needed only for the composed overview. Other platforms are not verified.
 
 ## Validation and version control
 
+### Source roots and documentation checks
+
+The [schema 2 inventory](.documentation-rules.json) declares these existing
+authoring/source deliverables. Each has a guide at its actual source root:
+
+| Deliverable | Source root and guide | Scope |
+| --- | --- | --- |
+| Perch.CAD | [cad/README.md](cad/README.md) | Editable dock/mast design and derived width samples |
+| Perch.Authoring | [scripts/README.md](scripts/README.md) | Coupled export, inspection and preview workflow plus documentation verification |
+| Perch.Website | [docs/README.md](docs/README.md) | Standalone HTML/CSS project website |
+
+The width samples are supporting entrypoints of the Perch design, not
+independently supported authoring products. No public framework views or
+separately shipped software modules exist. Generated exports and review
+figures are evidence/assets, not source deliverables. If an accessory becomes a
+separately supported product, review its identity and source boundary before
+changing this inventory; two deliverables cannot share one declared root.
+
+Run the required documentation gate after current documentation or inventory
+changes:
+
+```sh
+sh scripts/check_documentation.sh
+```
+
+The wrapper pins EngineeringRules **v0.1.9** at
+`f80213f14acf839b6d5ba9f131d4c113182e2592`; [setup and limits](scripts/README.md)
+describe its verified shared installation and failure behavior. There is no
+Swift pin. Empty module mappings reflect this repository's lack of software
+module boundaries; the three deliverables are explicitly checked instead.
+
+This adoption supersedes the earlier unpublished v0.1.7/v0.1.8 documentation
+candidates. It adds the authoring and website source-root guides and keeps the
+same three deliverable identities. The released engineering-review workflow
+provides [manual naming review](scripts/README.md#manual-naming-review), including
+identity and revision lifetimes. Review inventory completeness, names, useful
+content and the pinned gate before PR readiness. Repository configuration,
+installed tools, independent review and default-branch adoption are separate
+evidence states. Geometry and physical validation status remain as recorded in
+the CAD guide; documentation checks do not validate them.
+
+### Geometry evidence and packages
+
 Git retains the editable CAD, documentation, scripts, compact evidence JSON and
 selected documentation figures. Generated STL meshes, ZIPs, Blender scenes and
 backups, other renders, logs, slicer jobs and local environments are ignored;

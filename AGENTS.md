@@ -4,6 +4,30 @@ Follow the global working agreements and their applicable companion instructions
 Read `cad/README.md` for current geometry, assumptions, and physical checks still
 needed. `cad/compact_dock.scad` owns the parameters; generated meshes and Blender
 scenes must be regenerated after source changes. `README.md` documents the build.
+Read `scripts/README.md` for authoring commands and the pinned documentation gate,
+and `docs/README.md` for website source ownership and verification.
+
+## Documentation verification
+
+- `.documentation-rules.json` uses schema 2 to declare the existing CAD, authoring
+  workflow and website source roots. Their READMEs belong at those roots; the
+  root overview does not substitute for them. Review real ownership and useful
+  content with the shared engineering-review skill, including any new deliverable.
+- Run `sh scripts/check_documentation.sh` after documentation or inventory changes
+  and before PR readiness. It requires the exact EngineeringRules v0.1.9 source
+  revision and prepared Python environment documented in `scripts/README.md`.
+  Missing/mismatched tools are failures; checking must not install or upgrade.
+- This non-Swift project has no SwiftRules pin. Documentation checks cover the
+  declared filesystem facts and local Markdown links, not HTML, rendering,
+  complete inventory, geometry, slicing or physical fit. Keep those checks and
+  pending measurements separate. Do not regenerate historical CAD evidence for
+  a documentation-only change.
+- Use the released engineering-review skill for all introduced or changed names,
+  including its identity-and-revision lifetime review under the owning global
+  guidance. Review the owned OpenSCAD, Python, shell and website sources manually;
+  SwiftRules' declaration collector does not support them. Record the scope,
+  findings, meaningful retentions and coverage limits in independent review.
+  A Context search supplements that review; it is not a complete naming pass.
 
 ## Version control
 

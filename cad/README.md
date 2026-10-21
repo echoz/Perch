@@ -8,6 +8,18 @@ centered on the base when viewed from the front. The outer pocket shoulders
 align; the selected Mini opening is inset inside its preserved outer shape.
 `layout="rear"` retains the earlier comparison.
 
+## Authoring entrypoints
+
+| Source | Responsibility |
+| --- | --- |
+| [compact_dock.scad](compact_dock.scad) | Authoritative parameters, dock/mast geometry, reference envelopes and primary fit samples |
+| [mini_width_tests.scad](mini_width_tests.scad) | Supplementary W0.1/W0.2 samples derived from the authoritative measurements and construction |
+
+These entrypoints form one Perch authoring source unit. The
+[authoring workflow guide](../scripts/README.md) explains export,
+inspection and rendering commands, their output effects and documentation checks.
+The sections below own fit assumptions, physical feedback and assembly limits.
+
 The original Perch design source and resulting meshes are licensed under
 **CC BY-NC-SA 4.0** for noncommercial printing and remixing, with attribution and
 the required ShareAlike terms when shared. See the [license scope and attribution
@@ -372,12 +384,14 @@ openscad -o base.stl -D 'layout="side"' -D 'part="base"' compact_dock.scad
 X runs left/right, Y toward the back, Z upward. The base spans X=−80..80 and
 Y=0..121.8. At the current side defaults:
 
-- Mini center: X=32.2, Y=30.8, bottom Z=8; cavity X=−9.6..74, Y=6..55.6.
+- Mini center: X=32.2, Y=30.8, bottom Z=8; selected W0.1 cavity
+  X=−5.44..69.84, Y=8.045..53.555 (75.28 × 45.51 mm).
 - Card cavity: X=−74..−18.6, Y=6..55.6, centered X=−46.3, Y=30.8.
 - Card-stack reference: center X=−46.3, Y=15; bottom Z=8, top Z=93.6.
 - Headphone bounds: X=−75..75, Y=63.8..139.8, Z=26..206; cups end at Z=115.
-- Mini elbow body reference: X=73.2..91.2, Y=32.8..42.8, Z=25..38.5;
-  its cable descends outside the base near X=87.2. These are unmeasured placeholders.
+- Mini elbow body reference: X=69.74..87.74, Y=34.345..44.345, Z=25..38.5;
+  its cable descends outside the base near X=83.74. These source-derived bounds
+  describe unmeasured placeholders, not measured connector fit.
 - Shared cable opening: center X=39, Y=75; mouth X=26..52, Y=65..85.
 
 All reference outputs and `installed_mast` already use assembly coordinates.
