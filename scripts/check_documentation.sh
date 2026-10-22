@@ -9,14 +9,14 @@ fail() {
 
 [ "$#" -eq 0 ] || fail "this wrapper takes no arguments"
 perch_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd -P)
-tool_root=${PERCH_DOCUMENTATION_TOOLS:-"$HOME/.local/share/engineering-rules/0.1.9"}
-revision=f80213f14acf839b6d5ba9f131d4c113182e2592
+tool_root=${PERCH_DOCUMENTATION_TOOLS:-"$HOME/.local/share/engineering-rules/0.1.10"}
+revision=756987b0d0e4bf8245abe05611f43aab8ffc700e
 checker_hash=a581576ff1fb6bd56e80785ebed9d028ea7a3ace986b97a20b4587b2cd2515fb
 requirements_hash=6fd7cf677f2a33fc6d78057d60cf9ea9df01d21e85a1de4ccde742b1d57b584b
 
-[ -d "$tool_root" ] || fail "install the verified EngineeringRules v0.1.9 source checkout first"
+[ -d "$tool_root" ] || fail "install the verified EngineeringRules v0.1.10 source checkout first"
 actual_revision=$(git -C "$tool_root" rev-parse --verify HEAD 2>/dev/null) || fail "tool checkout is not readable"
-[ "$actual_revision" = "$revision" ] || fail "expected EngineeringRules v0.1.9 at $revision; found $actual_revision"
+[ "$actual_revision" = "$revision" ] || fail "expected EngineeringRules v0.1.10 at $revision; found $actual_revision"
 
 verify_file() {
     [ -f "$tool_root/$1" ] || fail "missing tool file: $1"

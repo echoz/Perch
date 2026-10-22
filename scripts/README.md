@@ -40,17 +40,20 @@ the main export command does not build them.
 sh scripts/check_documentation.sh
 ```
 
-The wrapper pins EngineeringRules **v0.1.9**, commit
-`f80213f14acf839b6d5ba9f131d4c113182e2592`, and verifies the checker and dependency
+The wrapper pins EngineeringRules **v0.1.10**, commit
+`756987b0d0e4bf8245abe05611f43aab8ffc700e`, and verifies the checker and dependency
 manifest hashes before invoking its isolated Python environment. By default it
-uses `~/.local/share/engineering-rules/0.1.9`. `PERCH_DOCUMENTATION_TOOLS` may select
+uses `~/.local/share/engineering-rules/0.1.10`. `PERCH_DOCUMENTATION_TOOLS` may select
 another checkout of that exact release with its prepared `.build/docs-venv`.
 The wrapper takes no arguments and always checks this repository's
 [schema 2 inventory](../.documentation-rules.json). Missing or mismatched tools
 fail; normal checking never installs, downloads or upgrades anything.
 
+Version 0.1.10 leaves the documentation checker and review skill unchanged. Its
+SwiftPM release-build changes do not apply to this non-Swift project.
+
 Prepare the source checkout and hash-pinned Python environment separately using
-the [release's documentation setup](https://github.com/echoz/EngineeringRules/blob/v0.1.9/README.md#documentation-gate).
+the [release's documentation setup](https://github.com/echoz/EngineeringRules/blob/v0.1.10/README.md#documentation-gate).
 The checker requires the exact parser versions from that release. Its scope is
 declared source-root README presence and local Markdown destinations, not HTML,
 remote URLs, heading anchors, inventory completeness or prose accuracy. Use the
