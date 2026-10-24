@@ -14,7 +14,7 @@ and `docs/README.md` for website source ownership and verification.
   root overview does not substitute for them. Review real ownership and useful
   content with the shared engineering-review skill, including any new deliverable.
 - Run `sh scripts/check_documentation.sh` after documentation or inventory changes
-  and before PR readiness. It requires the exact EngineeringRules v0.1.10 source
+  and before PR readiness. It requires the exact EngineeringRules v0.1.11 source
   revision and prepared Python environment documented in `scripts/README.md`.
   Missing/mismatched tools are failures; checking must not install or upgrade.
 - This non-Swift project has no SwiftRules pin. Documentation checks cover the

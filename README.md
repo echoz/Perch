@@ -151,8 +151,8 @@ changes:
 sh scripts/check_documentation.sh
 ```
 
-The wrapper pins EngineeringRules **v0.1.10** at
-`756987b0d0e4bf8245abe05611f43aab8ffc700e`; [setup and limits](scripts/README.md)
+The wrapper pins EngineeringRules **v0.1.11** at
+`3e42da0e724fe54585cc3cdd9009c749f7ba24d9`; [setup and limits](scripts/README.md)
 describe its verified shared installation and failure behavior. There is no
 Swift pin. Empty module mappings reflect this repository's lack of software
 module boundaries; the three deliverables are explicitly checked instead.
